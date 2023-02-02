@@ -1,0 +1,63 @@
+:root {
+  --link-button-font-size: 20px;
+  --title-font-size: 50px;
+  --font-family: "Nunito", sans-serif;
+  --paragraphs-font-size: 20px;
+  --buttonAndLinks-border-radius: 3px 3px;
+}
+#my-name {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-size: var(--title-font-size);
+}
+#profile-icon {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+#my-title,
+#about-page-title,
+#contact-anchor-destination {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family);
+
+  font-size: var(--title-font-size);
+}
+.links-to-other-pages {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: var(--font-family);
+}
+
+#introduction-paragraph {
+  font-size: var(--paragraphs-font-size);
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: center;
+  margin: 1px 120px;
+}
+.waysToContactMe {
+  display: flex;
+  justify-content: space-evenly;
+}
+.links {
+  font-family: var(--font-family);
+
+  border-radius: var(--buttonAndLinks-border-radius);
+  background: rgb(237, 236, 236);
+  flex: 1;
+  text-align: center;
+  margin: 3px 20px;
+  font-size: var(--link-button-font-size);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.htmlLinks {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
