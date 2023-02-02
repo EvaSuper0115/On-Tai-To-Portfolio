@@ -1,63 +1,133 @@
 :root {
   --link-button-font-size: 20px;
   --title-font-size: 50px;
-  --font-family: "Nunito", sans-serif;
+  --content-margin: 3px 20px;
+  --font-family: "Montserrat", sans-serif;
+
   --paragraphs-font-size: 20px;
-  --buttonAndLinks-border-radius: 3px 3px;
+  --buttonAndLinks-border-radius: 8px 8px;
 }
+body {
+  font-family: var(--font-family);
+}
+
 #my-name {
   display: flex;
   justify-content: center;
-  font-family: var(--font-family);
-  font-size: var(--title-font-size);
+
+  font-size: 100px;
+  margin: 50px 20px 0 20px;
 }
-#profile-icon {
+#frontend-developer-title {
+  display: flex;
+  justify-content: center;
+}
+.largeTitle {
+  display: flex;
+  justify-content: center;
+  margin: 70px 20px 20px 20px;
+  font-size: 70px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.homepageTopBar {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: var(--buttonAndLinks-border-radius);
+  font-size: 25px;
+  background: rgb(237, 236, 236);
+  margin-top: 0;
+}
+
+#profile-photo {
   width: 300px;
   display: block;
   margin: 0 auto;
+  border-radius: 50px 50px;
 }
-#my-title,
-#about-page-title,
-#contact-anchor-destination {
-  display: flex;
-  justify-content: center;
-  font-family: var(--font-family);
-
-  font-size: var(--title-font-size);
+#about-link,
+#myWork-link,
+#contact-link {
+  margin: 0px 10px;
+  transition: all 200ms ease-in-out;
+  padding: 10px 5px;
+  font-size: 22px;
 }
-.links-to-other-pages {
-  display: flex;
-  justify-content: space-evenly;
-  font-family: var(--font-family);
+#about-link:hover,
+#myWork-link:hover,
+#contact-link:hover {
+  font-size: 22.5px;
+  font-weight: 700px;
 }
-
 #introduction-paragraph {
   font-size: var(--paragraphs-font-size);
-  font-family: var(--font-family);
+
   display: flex;
   justify-content: center;
-  margin: 1px 120px;
+  margin: var(--content-margin);
+  text-align: center;
 }
-.waysToContactMe {
+.projectsShowcaseRow {
+  margin: var(--content-margin);
+}
+.subtitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#see-my-project-link {
+  font-size: 22px;
+  text-align: center;
+}
+.paddingForButtonLinks {
+  background: rgb(237, 236, 236);
+  width: 300px;
+  display: block;
+  margin: 3px auto;
+  transition: all 200ms ease-in-out;
+  border-radius: var(--buttonAndLinks-border-radius);
+}
+.paddingForButtonLinks:hover {
+  font-size: 22.5px;
+  font-weight: 700;
+}
+
+.ContactMeRow {
   display: flex;
   justify-content: space-evenly;
 }
-.links {
-  font-family: var(--font-family);
-
+.contactlinks {
   border-radius: var(--buttonAndLinks-border-radius);
   background: rgb(237, 236, 236);
+  padding: 15px 5px;
   flex: 1;
   text-align: center;
-  margin: 3px 20px;
+  margin: 10px 2px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 200ms ease-in-out;
+}
+.contactlinks:hover {
+  text-decoration: underline;
+  font-size: 12.5px;
+}
+.homepageLink {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 5px;
+  background: rgb(237, 236, 236);
+  border-radius: var(--buttonAndLinks-border-radius);
   font-size: var(--link-button-font-size);
+  margin: 10px 2px;
+  transition: all 200ms ease-in-out;
+}
+.homepageLink:hover {
+  font-weight: 700px;
+  font-size: 20.5px;
 }
 a {
   text-decoration: none;
   color: black;
-}
-.htmlLinks {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
 }
