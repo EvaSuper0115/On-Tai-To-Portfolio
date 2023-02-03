@@ -1,6 +1,4 @@
 :root {
-  --link-button-font-size: 20px;
-  --title-font-size: 50px;
   --content-margin: 3px 20px;
   --font-family: "Montserrat", sans-serif;
   --my-work-link-background: linear-gradient(
@@ -36,6 +34,11 @@ body {
   margin: 70px 20px 20px 20px;
   font-size: 70px;
   margin-top: 20px;
+  text-align: center;
+}
+.subtitle {
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
@@ -144,12 +147,6 @@ body {
   );
 }
 
-.subtitle {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
 .paddingForButtonLinks {
   background: rgb(237, 236, 236);
   width: 300px;
@@ -159,20 +156,18 @@ body {
   border-radius: var(--buttonAndLinks-border-radius);
 }
 
-.ContactMeRow {
-  display: flex;
-  justify-content: space-evenly;
-}
 .contactlinks {
   border-radius: var(--buttonAndLinks-border-radius);
   background: rgb(237, 236, 236);
-  padding: 15px 5px;
+  padding: 10px 5px;
   flex: 1;
   text-align: center;
-  margin: 10px 2px;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 600;
   transition: var(--transition-for-hovers);
+
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 .contactlinks:hover {
   text-decoration: underline;
@@ -195,7 +190,6 @@ a {
   justify-content: space-evenly;
 }
 small {
-  text-align: center;
   font-size: 12px;
   font-weight: 600;
 }
