@@ -48,17 +48,38 @@ body {
 }
 #about-link,
 #myWork-link,
-#contact-link {
-  margin: 0px 10px;
+#contact-link,
+#github-link-inside-portfolio {
+  margin: 0px 5px;
   transition: all 200ms ease-in-out;
   padding: 10px 5px;
   font-size: 22px;
 }
 #about-link:hover,
 #myWork-link:hover,
-#contact-link:hover {
+#contact-link:hover,
+#github-link-inside-portfolio:hover {
   font-size: 22.5px;
   font-weight: 700px;
+}
+
+#link-to-github-page,
+#see-my-project-link {
+  display: flex;
+  justify-content: center;
+  border-radius: var(--buttonAndLinks-border-radius);
+  background: rgb(237, 236, 236);
+  padding: 15px 5px;
+
+  font-size: 22px;
+  font-weight: 600;
+  transition: all 200ms ease-in-out;
+}
+
+#link-to-github-page:hover,
+#see-my-project-link:hover {
+  font-size: 22.5px;
+  font-weight: 700;
 }
 #introduction-paragraph {
   font-size: var(--paragraphs-font-size);
@@ -68,7 +89,8 @@ body {
   margin: var(--content-margin);
   text-align: center;
 }
-.projectsShowcaseRow {
+.projectsShowcaseRow,
+.GithubRow {
   margin: var(--content-margin);
 }
 .subtitle {
@@ -77,10 +99,6 @@ body {
   text-align: center;
 }
 
-#see-my-project-link {
-  font-size: 22px;
-  text-align: center;
-}
 .paddingForButtonLinks {
   background: rgb(237, 236, 236);
   width: 300px;
@@ -88,10 +106,6 @@ body {
   margin: 3px auto;
   transition: all 200ms ease-in-out;
   border-radius: var(--buttonAndLinks-border-radius);
-}
-.paddingForButtonLinks:hover {
-  font-size: 22.5px;
-  font-weight: 700;
 }
 
 .ContactMeRow {
@@ -111,7 +125,6 @@ body {
 }
 .contactlinks:hover {
   text-decoration: underline;
-  font-size: 12.5px;
 }
 .homepageLink {
   display: flex;
@@ -130,4 +143,15 @@ body {
 a {
   text-decoration: none;
   color: black;
+}
+.skillSet {
+  display: flex;
+  justify-content: center;
+}
+
+.skillSetLogos {
+  width: 40px;
+  padding: 6px 6px;
+  display: flex;
+  justify-content: space-evenly;
 }
