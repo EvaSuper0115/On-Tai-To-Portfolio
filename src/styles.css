@@ -52,7 +52,7 @@ body {
 }
 
 #profile-photo {
-  width: 300px;
+  max-width: 80%;
   display: block;
   margin: 30px auto;
   border-radius: 20px;
@@ -184,14 +184,15 @@ a {
 }
 
 .skillSetLogos {
-  width: 55px;
+  width: 60px;
   padding: 9px 6px;
   display: block;
   margin: auto;
+  opacity: 0.8;
 }
 
 small {
-  font-size: 10px;
+  font-size: 19px;
   font-weight: 600;
   text-align: center;
 }
