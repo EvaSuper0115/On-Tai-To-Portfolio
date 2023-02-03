@@ -66,9 +66,19 @@ body {
   font-size: 22.5px;
   font-weight: 700px;
 }
+#myWork-link {
+  background: linear-gradient(
+    255deg,
+    rgb(175, 216, 253) 0%,
+    rgb(177, 159, 251) 95%,
+    rgb(177, 159, 251) 100%
+  );
+  color: antiquewhite;
+  border-radius: var(--buttonAndLinks-border-radius);
+  font-weight: 600;
+}
 
-#link-to-github-page,
-#see-my-project-link {
+#link-to-github-page {
   display: flex;
   justify-content: center;
   border-radius: var(--buttonAndLinks-border-radius);
@@ -78,6 +88,22 @@ body {
   font-size: 22px;
   font-weight: 600;
   transition: all 200ms ease-in-out;
+}
+#see-my-project-link {
+  display: flex;
+  justify-content: center;
+  padding: 15px 5px;
+  font-size: 22px;
+  transition: all 200ms ease-in-out;
+  background: linear-gradient(
+    255deg,
+    rgb(175, 216, 253) 0%,
+    rgb(177, 159, 251) 95%,
+    rgb(177, 159, 251) 100%
+  );
+  color: antiquewhite;
+  border-radius: var(--buttonAndLinks-border-radius);
+  font-weight: 600;
 }
 .paddingForParagraphs {
   display: flex;
