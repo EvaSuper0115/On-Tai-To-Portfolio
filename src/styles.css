@@ -31,8 +31,7 @@ body {
   text-align: center;
 }
 
-.homepageTopBar,
-.aboutPageTopBar {
+.pageTopBar {
   display: flex;
   justify-content: flex-end;
   border-radius: var(--buttonAndLinks-border-radius);
