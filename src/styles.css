@@ -31,7 +31,8 @@ body {
   text-align: center;
 }
 
-.homepageTopBar {
+.homepageTopBar,
+.aboutPageTopBar {
   display: flex;
   justify-content: flex-end;
   border-radius: var(--buttonAndLinks-border-radius);
@@ -49,7 +50,8 @@ body {
 #about-link,
 #myWork-link,
 #contact-link,
-#github-link-inside-portfolio {
+#github-link-inside-portfolio,
+.homepageLink {
   margin: 0px 5px;
   transition: all 200ms ease-in-out;
   padding: 10px 5px;
@@ -58,7 +60,8 @@ body {
 #about-link:hover,
 #myWork-link:hover,
 #contact-link:hover,
-#github-link-inside-portfolio:hover {
+#github-link-inside-portfolio:hover,
+.homepageLink:hover {
   font-size: 22.5px;
   font-weight: 700px;
 }
@@ -75,19 +78,26 @@ body {
   font-weight: 600;
   transition: all 200ms ease-in-out;
 }
-
+.paddingForParagraphs {
+  display: flex;
+  margin: 30px 0;
+  justify-content: center;
+  align-items: flex-start;
+}
 #link-to-github-page:hover,
 #see-my-project-link:hover {
   font-size: 22.5px;
   font-weight: 700;
 }
-#introduction-paragraph {
+#introduction-paragraph,
+.skillSetParagraph {
   font-size: var(--paragraphs-font-size);
-
+  font-style: italic;
   display: flex;
   justify-content: center;
   margin: var(--content-margin);
   text-align: center;
+  padding: 20px;
 }
 .projectsShowcaseRow,
 .GithubRow {
@@ -126,20 +136,7 @@ body {
 .contactlinks:hover {
   text-decoration: underline;
 }
-.homepageLink {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px 5px;
-  background: rgb(237, 236, 236);
-  border-radius: var(--buttonAndLinks-border-radius);
-  font-size: var(--link-button-font-size);
-  margin: 10px 2px;
-  transition: all 200ms ease-in-out;
-}
-.homepageLink:hover {
-  font-weight: 700px;
-  font-size: 20.5px;
-}
+
 a {
   text-decoration: none;
   color: black;
@@ -150,8 +147,14 @@ a {
 }
 
 .skillSetLogos {
-  width: 40px;
+  width: 50px;
+
   padding: 6px 6px;
   display: flex;
   justify-content: space-evenly;
+}
+small {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
 }
