@@ -51,25 +51,6 @@ body {
   border-radius: 20px;
 }
 
-#about-link,
-#myWork-link,
-#contact-link,
-#github-link-inside-portfolio,
-#homepage-icon {
-  margin: 0px 3px;
-  transition: var(--transition-for-hovers);
-  padding: 10px 5px;
-  font-size: 22px;
-}
-
-#about-link:hover,
-#myWork-link:hover,
-#contact-link:hover,
-#github-link-inside-portfolio:hover,
-#homepage-icon:hover {
-  font-size: 22.5px;
-  font-weight: 700px;
-}
 #myWork-link {
   background: var(--my-work-link-background);
   color: antiquewhite;
