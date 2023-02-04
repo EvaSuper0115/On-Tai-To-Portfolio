@@ -2,10 +2,11 @@
   --content-margin: 3px 20px;
   --font-family: "Montserrat", sans-serif;
   --my-work-link-background: linear-gradient(
-    255deg,
-    rgb(175, 216, 253) 0%,
-    rgb(177, 159, 251) 95%,
-    rgb(177, 159, 251) 100%
+    348deg,
+    rgb(208, 237, 251) 0%,
+    rgb(246, 248, 255) 0%,
+    rgb(53, 36, 90) 0%,
+    rgb(4, 4, 30) 100%
   );
   --paragraphs-font-size: 20px;
   --buttonAndLinks-border-radius: 8px 8px;
@@ -31,9 +32,10 @@ body {
 .largeTitle {
   display: flex;
   justify-content: center;
-  margin: 70px 20px 20px 20px;
+
   font-size: 70px;
-  margin-top: 20px;
+
+  padding-top: 50px;
   text-align: center;
 }
 .subtitle {
@@ -42,17 +44,8 @@ body {
   text-align: center;
 }
 
-.pageTopBar {
-  display: flex;
-  justify-content: flex-end;
-  border-radius: var(--buttonAndLinks-border-radius);
-  font-size: 25px;
-  background: rgb(237, 236, 236);
-  margin-top: 0;
-}
-
 #profile-photo {
-  max-width: 80%;
+  max-width: 60%;
   display: block;
   margin: 30px auto;
   border-radius: 20px;
@@ -195,4 +188,63 @@ small {
   font-size: 19px;
   font-weight: 600;
   text-align: center;
+}
+.navbarDecoration {
+  background: linear-gradient(
+    348deg,
+    rgb(208, 237, 251) 0%,
+    rgb(246, 248, 255) 0%,
+    rgb(88, 88, 88) 0%,
+    rgb(11, 11, 49) 100%
+  );
+  opacity: 0.95;
+  border-radius: 0 0 2px 2px;
+  box-shadow: var(--box-shadow);
+  padding: 0;
+}
+.navbarHeight {
+  height: 24px;
+}
+.navbarButtonDecoration {
+  background: rgb(231, 231, 231, 0.8);
+}
+.navbarName {
+  font-weight: 600;
+  font-size: 26px;
+  transition: var(--transition-for-hovers);
+  padding: 9px 1px;
+  border-radius: var(--buttonAndLinks-border-radius);
+  margin-left: 1px;
+  color: aliceblue;
+}
+
+.navbarTexts {
+  font-size: 22px;
+  font-weight: 600;
+  transition: var(--transition-for-hovers);
+  padding: 9px 1px;
+
+  border-radius: var(--buttonAndLinks-border-radius);
+  margin-left: 1px;
+  color: aliceblue;
+}
+
+.navbarName:hover {
+  font-size: 26.5px;
+  color: rgba(235, 235, 235, 0.8);
+}
+.navbarTexts:hover {
+  font-size: 22.5px;
+  color: rgba(235, 235, 235, 0.8);
+}
+.navbarItemsFlexDirection {
+  justify-content: flex-end;
+}
+.myWorkLinkButtonDisplay {
+  background: var(--my-work-link-background);
+  color: antiquewhite;
+  border-radius: var(--buttonAndLinks-border-radius);
+  box-shadow: var(--box-shadow);
+  font-weight: 600;
+  max-width: 120px;
 }
