@@ -19,7 +19,7 @@ body {
 /* homepage styles */
 #my-name {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 
   font-size: 100px;
   margin: 50px 20px 0 20px;
@@ -28,6 +28,12 @@ body {
   display: flex;
   justify-content: center;
   margin: var(--content-margin);
+}
+.homepageBriefIntroduction {
+  display: flex;
+  justify-content: flex-start;
+  padding: 27px 28px;
+  font-size: 20px;
 }
 .largeTitle {
   display: flex;
@@ -45,9 +51,9 @@ body {
 }
 
 #profile-photo {
-  max-width: 60%;
-  display: block;
-  margin: 30px auto;
+  display: flex;
+  justify-content: flex-start;
+  margin: 50px auto;
   border-radius: 20px;
 }
 
@@ -182,40 +188,39 @@ small {
   border-radius: 0 0 2px 2px;
   box-shadow: var(--box-shadow);
   padding: 0;
+  min-height: 70px;
 }
-.navbarHeight {
-  height: 24px;
-}
+
 .navbarButtonDecoration {
-  background: rgb(231, 231, 231, 0.8);
+  background: rgb(231, 231, 231, 0.9);
 }
 .navbarName {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 22px;
   transition: var(--transition-for-hovers);
   padding: 9px 1px;
   border-radius: var(--buttonAndLinks-border-radius);
-  margin-left: 1px;
+
   color: aliceblue;
 }
 
 .navbarTexts {
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 600;
   transition: var(--transition-for-hovers);
   padding: 9px 1px;
 
   border-radius: var(--buttonAndLinks-border-radius);
-  margin-left: 1px;
+
   color: aliceblue;
 }
 
 .navbarName:hover {
-  font-size: 26.5px;
+  font-size: 22.5px;
   color: rgba(235, 235, 235, 0.8);
 }
 .navbarTexts:hover {
-  font-size: 22.5px;
+  font-size: 17.5px;
   color: rgba(235, 235, 235, 0.8);
 }
 .navbarItemsFlexDirection {
@@ -227,5 +232,5 @@ small {
   border-radius: var(--buttonAndLinks-border-radius);
   box-shadow: var(--box-shadow);
   font-weight: 600;
-  max-width: 120px;
+  max-width: 90px;
 }
