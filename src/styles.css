@@ -12,9 +12,15 @@
   --buttonAndLinks-border-radius: 8px 8px;
   --box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   --transition-for-hovers: all 200ms ease-in-out;
+  --light-mode-body-background: linear-gradient(
+    120deg,
+    #fdfbfb 0%,
+    #ebedee 100%
+  );
 }
 body {
   font-family: var(--font-family);
+  background: var(--light-mode-body-background);
 }
 /* homepage styles */
 #my-name {
@@ -75,6 +81,27 @@ body {
 .projectsShowcaseRow,
 .GithubRow {
   margin: var(--content-margin);
+}
+.appDescription {
+  font-size: 25px;
+}
+.projectName {
+  font-size: 50px;
+  font-weight: 600;
+}
+.launchProjectLinks,
+.viewSourceCodeLinks {
+  padding: 15px 5px;
+  display: flex;
+  justify-content: center;
+  background: var(--my-work-link-background);
+  color: aliceblue;
+  border-radius: var(--buttonAndLinks-border-radius);
+  transition: var(--transition-for-hovers);
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: var(--box-shadow);
+  margin: 5px 30px;
 }
 
 #link-to-github-page {
