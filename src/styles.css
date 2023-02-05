@@ -49,12 +49,20 @@ body {
   justify-content: center;
   text-align: center;
 }
+.smallSubtitles {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  margin-top: 20px;
+}
 
 #profile-photo {
   display: flex;
   justify-content: flex-start;
   margin: 50px auto;
   border-radius: 20px;
+  box-shadow: var(--box-shadow);
 }
 
 #myWork-link {
@@ -170,11 +178,18 @@ a {
   margin: auto;
   opacity: 0.8;
 }
-
+.smallerLogos {
+  width: 43px;
+}
 small {
   font-size: 19px;
   font-weight: 600;
   text-align: center;
+}
+.smallerLogoDescriptions {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
 }
 .navbarDecoration {
   background: linear-gradient(
