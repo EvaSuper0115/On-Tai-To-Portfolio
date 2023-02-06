@@ -159,10 +159,14 @@ body {
 }
 
 /* about page styles */
+.see-my-project-link-row {
+  display: flex;
+  justify-content: center;
+}
 .see-my-project-link {
   display: flex;
   justify-content: center;
-  padding: 10px 3px;
+  padding: 10px 21px;
   font-size: 16px;
   transition: var(--transition-for-hovers);
   background: var(--my-work-link-background);
@@ -171,7 +175,7 @@ body {
   font-weight: 600;
   box-shadow: var(--box-shadow);
   margin: 3px 3px;
-  max-width: 130px;
+  max-width: 163px;
 }
 .paddingForParagraphs {
   display: flex;
@@ -308,6 +312,7 @@ small {
 .navbarItemsFlexDirection {
   justify-content: flex-end;
 }
+/*
 .myWorkLinkButtonDisplay {
   background: var(--my-work-link-background);
   color: antiquewhite;
@@ -315,7 +320,7 @@ small {
   box-shadow: var(--box-shadow);
   font-weight: 600;
   max-width: 90px;
-}
+}*/
 .footer {
   font-size: 13px;
   text-align: center;
@@ -350,5 +355,11 @@ small {
   }
   #frontend-developer-title {
     font-size: 20px;
+  }
+  .navbarName {
+    font-size: 17px;
+  }
+  .navbarName:hover {
+    font-size: 17.5px;
   }
 }
