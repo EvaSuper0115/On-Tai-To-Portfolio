@@ -56,6 +56,9 @@ a {
   justify-content: flex-start;
   margin-left: 70px;
   margin-right: 70px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 18px;
 }
 
 .homepageBriefIntroduction {
@@ -195,16 +198,16 @@ a {
 .about-me-link {
   display: flex;
   justify-content: center;
-  padding: 10px 21px;
-  font-size: 16px;
+  padding: 10px 20px;
+  font-size: 22px;
   transition: var(--transition-for-hovers);
   background: var(--my-work-link-background);
   color: antiquewhite;
   border-radius: var(--buttonAndLinks-border-radius);
-
+  font-weight: 400;
   box-shadow: var(--box-shadow);
   margin: 3px 3px;
-  max-width: 163px;
+  max-width: 165px;
 }
 .about-me-link {
   background: var(--light-mode-body-background);
