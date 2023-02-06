@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: flex-start;
   font-weight: 700;
-  font-size: 100px;
+  font-size: 90px;
   margin: 50px 20px 0 20px;
 }
 #frontend-developer-title {
@@ -31,6 +31,7 @@ body {
   margin: var(--content-margin);
   font-weight: 600;
 }
+
 .homepageBriefIntroduction {
   display: flex;
   justify-content: flex-start;
@@ -68,27 +69,50 @@ body {
   border-radius: 20px;
   box-shadow: var(--box-shadow);
 }
+.my-work-and-about-links-row {
+  display: flex;
+  justify-content: center;
+}
+.about-me-link {
+  background: var(--light-mode-body-background);
+  color: black;
 
+  box-shadow: var(--box-shadow);
+  border-radius: var(--buttonAndLinks-border-radius);
+  transition: var(--transition-for-hovers-);
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  padding: 10px 3px;
+  margin: 3px 3px;
+  max-width: 130px;
+}
+.about-me-link:hover {
+  font-size: 16.5px;
+}
+/*
 #myWork-link {
   background: var(--my-work-link-background);
   color: antiquewhite;
   border-radius: var(--buttonAndLinks-border-radius);
   font-weight: 600;
   box-shadow: var(--box-shadow);
-}
+}*/
 .projectsShowcaseRow,
 .GithubRow {
   margin: var(--content-margin);
 }
 .appDescription {
-  font-size: 21px;
-  font-weight: 600;
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: 500;
 }
 .projectName {
   font-size: 40px;
   font-weight: 700;
   margin: 60px 0 10px 0;
 }
+
 .hoverProjectImage {
   transition: var(--transition-for-hovers);
 }
@@ -98,7 +122,7 @@ body {
 }
 .launchProjectLinks,
 .viewSourceCodeLinks {
-  padding: 10px 5px;
+  padding: 15px 5px;
   display: flex;
   justify-content: center;
   background: var(--my-work-link-background);
@@ -108,13 +132,20 @@ body {
   font-size: 15px;
   font-weight: 600;
   box-shadow: var(--box-shadow);
-  margin: 5px 30px;
+  margin: 8px 30px;
 }
 .viewSourceCodeLinks {
   background: var(--light-mode-body-background);
   color: black;
 }
-
+.launchProjectLinks:hover,
+.viewSourceCodeLinks:hover {
+  font-size: 15.5px;
+}
+.gitHubLinkButton {
+  display: flex;
+  justify-content: center;
+}
 #link-to-github-page {
   display: flex;
   justify-content: center;
@@ -122,23 +153,25 @@ body {
 
   padding: 15px 5px;
 
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 600;
   transition: var(--transition-for-hovers);
 }
 
 /* about page styles */
-#see-my-project-link {
+.see-my-project-link {
   display: flex;
   justify-content: center;
-  padding: 15px 5px;
-  font-size: 22px;
+  padding: 10px 3px;
+  font-size: 16px;
   transition: var(--transition-for-hovers);
   background: var(--my-work-link-background);
   color: antiquewhite;
   border-radius: var(--buttonAndLinks-border-radius);
   font-weight: 600;
   box-shadow: var(--box-shadow);
+  margin: 3px 3px;
+  max-width: 130px;
 }
 .paddingForParagraphs {
   display: flex;
@@ -147,8 +180,8 @@ body {
   align-items: flex-start;
 }
 #link-to-github-page:hover,
-#see-my-project-link:hover {
-  font-size: 22.5px;
+.see-my-project-link:hover {
+  font-size: 16.5px;
   font-weight: 700;
 }
 #introduction-paragraph,
@@ -289,4 +322,33 @@ small {
   margin-top: 40px;
   margin-bottom: 20px;
   font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  #my-name {
+    margin-top: 100px;
+    font-size: 110px;
+  }
+  #frontend-developer-title {
+    font-size: 48px;
+  }
+
+  .about-me-link,
+  .see-my-project-link {
+    font-size: 30px;
+    max-width: 900px;
+    margin: 12px 3px;
+  }
+  .about-me-link:hover,
+  .see-my-project-link:hover {
+    font-size: 30.5px;
+  }
+}
+@media (max-width: 768px) {
+  #my-name {
+    font-size: 56px;
+  }
+  #frontend-developer-title {
+    font-size: 20px;
+  }
 }
