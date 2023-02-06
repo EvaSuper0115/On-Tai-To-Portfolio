@@ -7,7 +7,7 @@
     #517fa4 100%
   );
   --paragraphs-font-size: 20px;
-  --buttonAndLinks-border-radius: 8px 8px;
+  --buttonAndLinks-border-radius: 50px 50px;
   --box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   --transition-for-hovers: all 200ms ease-in-out;
   --light-mode-body-background: linear-gradient(to top, #dfe9f3 0%, white 100%);
@@ -27,17 +27,35 @@ a {
   font-weight: 300;
 }
 /* homepage styles */
+.homepage-top-section {
+  background-image: url("../src/background-picture-rainy-city.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+  padding: 50px 0;
+}
 #my-name {
   display: flex;
   justify-content: flex-start;
-
-  font-size: 90px;
-  margin: 50px 20px 0 20px;
+  font-family: "Yeseva One", cursive;
+  color: antiquewhite;
+  font-size: 76px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
+.hi-my-name-is {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 65px;
+  margin-right: 65px;
+  font-weight: 300;
+}
+
 #frontend-developer-title {
   display: flex;
-  justify-content: center;
-  margin: var(--content-margin);
+  justify-content: flex-start;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .homepageBriefIntroduction {
@@ -77,9 +95,11 @@ a {
 }
 .my-work-and-about-links-row {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-left: 70px;
+  margin-right: 70px;
 }
-.about-me-link {
+.aboutmy-work-link-me-link {
   background: var(--light-mode-body-background);
   color: black;
 
@@ -92,11 +112,9 @@ a {
   justify-content: center;
   padding: 10px 3px;
   margin: 3px 3px;
-  max-width: 130px;
+  max-width: 163px;
 }
-.about-me-link:hover {
-  font-size: 16.5px;
-}
+
 /*
 #myWork-link {
   background: var(--my-work-link-background);
@@ -122,7 +140,7 @@ a {
   transition: var(--transition-for-hovers);
 }
 .hoverProjectImage:hover {
-  transform: scale(1.3);
+  transform: scale(1.25);
   opacity: 0.9;
 }
 .launchAndViewCodesLinksRow {
@@ -173,7 +191,8 @@ a {
   display: flex;
   justify-content: center;
 }
-.see-my-project-link {
+.see-my-project-link,
+.about-me-link {
   display: flex;
   justify-content: center;
   padding: 10px 21px;
@@ -187,6 +206,10 @@ a {
   margin: 3px 3px;
   max-width: 163px;
 }
+.about-me-link {
+  background: var(--light-mode-body-background);
+  color: black;
+}
 .paddingForParagraphs {
   display: flex;
   margin: 30px 0;
@@ -194,7 +217,8 @@ a {
   align-items: flex-start;
 }
 #link-to-github-page:hover,
-.see-my-project-link:hover {
+.see-my-project-link:hover,
+.about-me-link:hover {
   font-size: 16.5px;
 }
 #introduction-paragraph,
@@ -288,6 +312,9 @@ small {
 .navbarButtonDecoration {
   background: rgb(231, 231, 231, 0.9);
 }
+.my-name-at-nav-bar {
+  font-family: "Yeseva One", cursive;
+}
 .navbarName {
   font-size: 22px;
   transition: var(--transition-for-hovers);
@@ -318,15 +345,7 @@ small {
 .navbarItemsFlexDirection {
   justify-content: flex-end;
 }
-/*
-.myWorkLinkButtonDisplay {
-  background: var(--my-work-link-background);
-  color: antiquewhite;
-  border-radius: var(--buttonAndLinks-border-radius);
-  box-shadow: var(--box-shadow);
- 
-  max-width: 90px;
-}*/
+
 .contactMeMessage {
   font-size: 20px;
 }
@@ -341,51 +360,9 @@ small {
   color: rgb(115, 202, 253);
 }
 
-@media (min-width: 1024px) {
-  #my-name {
-    margin-top: 100px;
-    font-size: 110px;
-  }
-  #frontend-developer-title {
-    font-size: 48px;
-  }
-
-  .about-me-link,
-  .see-my-project-link {
-    font-size: 30px;
-    max-width: 900px;
-    margin: 12px 3px;
-  }
-  .about-me-link:hover,
-  .see-my-project-link:hover {
-    font-size: 30.5px;
-  }
-  .smallerLogos {
-    width: 70px;
-  }
-  .smallerLogoDescriptions {
-    font-size: 15px;
-  }
-}
-@media (max-width: 766px) {
-  #my-name {
-    font-size: 72px;
-  }
-  #frontend-developer-title {
-    font-size: 20px;
-  }
-  .navbarName {
-    font-size: 17px;
-  }
-  .navbarName:hover {
-    font-size: 17.5px;
-  }
-}
 @media (max-width: 576px) {
-  #my-name,
-  #frontend-developer-title {
+  .my-work-and-about-links-row {
     justify-content: center;
-    text-align: center;
   }
   .smallerLogos {
     width: 52px;
