@@ -79,7 +79,7 @@ body {
 
   box-shadow: var(--box-shadow);
   border-radius: var(--buttonAndLinks-border-radius);
-  transition: var(--transition-for-hovers-);
+  transition: var(--transition-for-hovers);
   font-size: 16px;
   font-weight: 600;
   display: flex;
@@ -328,6 +328,10 @@ small {
   margin-bottom: 20px;
   font-weight: 600;
 }
+.footer a {
+  text-decoration: underline;
+  color: rgb(115, 202, 253);
+}
 
 @media (min-width: 1024px) {
   #my-name {
@@ -348,10 +352,16 @@ small {
   .see-my-project-link:hover {
     font-size: 30.5px;
   }
+  .smallerLogos {
+    width: 70px;
+  }
+  .smallerLogoDescriptions {
+    font-size: 15px;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   #my-name {
-    font-size: 56px;
+    font-size: 72px;
   }
   #frontend-developer-title {
     font-size: 20px;
@@ -361,5 +371,18 @@ small {
   }
   .navbarName:hover {
     font-size: 17.5px;
+  }
+}
+@media (max-width: 576px) {
+  #my-name,
+  #frontend-developer-title {
+    justify-content: center;
+    text-align: center;
+  }
+  .smallerLogos {
+    width: 85px;
+  }
+  .smallerLogoDescriptions {
+    font-size: 20px;
   }
 }
