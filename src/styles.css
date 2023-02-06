@@ -1,6 +1,6 @@
 :root {
   --content-margin: 3px 20px;
-  --font-family: "Montserrat", sans-serif;
+  --font-family: "Poppins", sans-serif;
   --my-work-link-background: linear-gradient(
     to right,
     #243949 0%,
@@ -15,12 +15,22 @@
 body {
   font-family: var(--font-family);
   background: var(--light-mode-body-background);
+  font-weight: 200;
+}
+p {
+  font-size: var(--paragraphs-font-size);
+}
+h2 {
+  font-weight: 300;
+}
+a {
+  font-weight: 300;
 }
 /* homepage styles */
 #my-name {
   display: flex;
   justify-content: flex-start;
-  font-weight: 700;
+
   font-size: 90px;
   margin: 50px 20px 0 20px;
 }
@@ -28,7 +38,6 @@ body {
   display: flex;
   justify-content: center;
   margin: var(--content-margin);
-  font-weight: 600;
 }
 
 .homepageBriefIntroduction {
@@ -36,12 +45,11 @@ body {
   justify-content: flex-start;
   padding: 27px 28px;
   font-size: 20px;
-  font-weight: 600;
 }
 .largeTitle {
   display: flex;
   justify-content: center;
-  font-weight: 700;
+
   font-size: 70px;
 
   padding-top: 50px;
@@ -51,7 +59,6 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-weight: 600;
 }
 .smallSubtitles {
   font-size: 23px;
@@ -59,7 +66,6 @@ body {
   justify-content: flex-start;
   font-style: italic;
   margin-top: 20px;
-  font-weight: 600;
 }
 
 #profile-photo {
@@ -81,7 +87,7 @@ body {
   border-radius: var(--buttonAndLinks-border-radius);
   transition: var(--transition-for-hovers);
   font-size: 16px;
-  font-weight: 600;
+
   display: flex;
   justify-content: center;
   padding: 10px 3px;
@@ -96,7 +102,7 @@ body {
   background: var(--my-work-link-background);
   color: antiquewhite;
   border-radius: var(--buttonAndLinks-border-radius);
-  font-weight: 600;
+
   box-shadow: var(--box-shadow);
 }*/
 .projectsShowcaseRow,
@@ -104,12 +110,11 @@ body {
   margin: var(--content-margin);
 }
 .appDescription {
-  font-size: calc(1.3rem + 0.6vw);
-  font-weight: 500;
+  font-size: var(--paragraphs-font-size);
 }
 .projectName {
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 32px;
+
   margin: 60px 0 10px 0;
 }
 
@@ -117,7 +122,7 @@ body {
   transition: var(--transition-for-hovers);
 }
 .hoverProjectImage:hover {
-  transform: scale(1.2);
+  transform: scale(1.25);
   opacity: 0.9;
 }
 .launchAndViewCodesLinksRow {
@@ -135,7 +140,7 @@ body {
   border-radius: var(--buttonAndLinks-border-radius);
   transition: var(--transition-for-hovers);
   font-size: 15px;
-  font-weight: 600;
+
   box-shadow: var(--box-shadow);
   margin: 8px 30px;
 }
@@ -159,7 +164,7 @@ body {
   padding: 15px 5px;
 
   font-size: 16px;
-  font-weight: 600;
+
   transition: var(--transition-for-hovers);
 }
 
@@ -177,7 +182,7 @@ body {
   background: var(--my-work-link-background);
   color: antiquewhite;
   border-radius: var(--buttonAndLinks-border-radius);
-  font-weight: 600;
+
   box-shadow: var(--box-shadow);
   margin: 3px 3px;
   max-width: 163px;
@@ -191,7 +196,6 @@ body {
 #link-to-github-page:hover,
 .see-my-project-link:hover {
   font-size: 16.5px;
-  font-weight: 700;
 }
 #introduction-paragraph,
 .skillSetParagraph {
@@ -202,7 +206,6 @@ body {
   margin: var(--content-margin);
   text-align: center;
   padding: 20px;
-  font-weight: 600;
 }
 
 #introduction-paragraph {
@@ -234,7 +237,7 @@ body {
   flex: 1;
   text-align: center;
   font-size: 18px;
-  font-weight: 600;
+
   transition: var(--transition-for-hovers);
   color: antiquewhite;
   margin-top: 3px;
@@ -265,7 +268,7 @@ a {
 }
 small {
   font-size: 19px;
-  font-weight: 600;
+
   text-align: center;
 }
 .smallerLogoDescriptions {
@@ -286,18 +289,16 @@ small {
   background: rgb(231, 231, 231, 0.9);
 }
 .navbarName {
-  font-weight: 600;
   font-size: 22px;
   transition: var(--transition-for-hovers);
   padding: 9px 1px;
   border-radius: var(--buttonAndLinks-border-radius);
-
   color: aliceblue;
 }
 
 .navbarTexts {
   font-size: 17px;
-  font-weight: 600;
+
   transition: var(--transition-for-hovers);
   padding: 9px 1px;
 
@@ -323,19 +324,17 @@ small {
   color: antiquewhite;
   border-radius: var(--buttonAndLinks-border-radius);
   box-shadow: var(--box-shadow);
-  font-weight: 600;
+ 
   max-width: 90px;
 }*/
 .contactMeMessage {
   font-size: 20px;
-  font-weight: 600;
 }
 .footer {
   font-size: 13px;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 20px;
-  font-weight: 600;
 }
 .footer a {
   text-decoration: underline;
@@ -389,12 +388,12 @@ small {
     text-align: center;
   }
   .smallerLogos {
-    display: none;
+    width: 52px;
   }
   .smallerLogoDescriptions {
     font-size: 23px;
   }
   .skillSetLogos {
-    display: none;
+    width: 64px;
   }
 }
