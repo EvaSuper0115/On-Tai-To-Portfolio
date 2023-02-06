@@ -1,17 +1,16 @@
 :root {
   --content-margin: 3px 20px;
   --font-family: "Montserrat", sans-serif;
-  --my-work-link-background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  --my-work-link-background: linear-gradient(
+    to right,
+    #243949 0%,
+    #517fa4 100%
+  );
   --paragraphs-font-size: 20px;
   --buttonAndLinks-border-radius: 8px 8px;
   --box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   --transition-for-hovers: all 200ms ease-in-out;
-  --light-mode-body-background: linear-gradient(
-    to top,
-    #f3e7e9 0%,
-    #e3eeff 99%,
-    #e3eeff 100%
-  );
+  --light-mode-body-background: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 body {
   font-family: var(--font-family);
@@ -120,6 +119,11 @@ body {
   transform: scale(1.2);
   opacity: 0.9;
 }
+.launchAndViewCodesLinksRow {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .launchProjectLinks,
 .viewSourceCodeLinks {
   padding: 15px 5px;
@@ -269,7 +273,7 @@ small {
   justify-content: center;
 }
 .navbarDecoration {
-  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
   opacity: 0.95;
   border-radius: 0 0 2px 2px;
   box-shadow: var(--box-shadow);
@@ -321,6 +325,10 @@ small {
   font-weight: 600;
   max-width: 90px;
 }*/
+.contactMeMessage {
+  font-size: 20px;
+  font-weight: 600;
+}
 .footer {
   font-size: 13px;
   text-align: center;
@@ -359,7 +367,7 @@ small {
     font-size: 15px;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 766px) {
   #my-name {
     font-size: 72px;
   }
@@ -380,9 +388,9 @@ small {
     text-align: center;
   }
   .smallerLogos {
-    width: 85px;
+    width: 67px;
   }
   .smallerLogoDescriptions {
-    font-size: 20px;
+    font-size: 13px;
   }
 }
