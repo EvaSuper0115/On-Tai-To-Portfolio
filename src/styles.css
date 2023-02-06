@@ -59,6 +59,7 @@ body {
   justify-content: flex-start;
   font-style: italic;
   margin-top: 20px;
+  font-weight: 600;
 }
 
 #profile-photo {
@@ -388,9 +389,12 @@ small {
     text-align: center;
   }
   .smallerLogos {
-    width: 67px;
+    display: none;
   }
   .smallerLogoDescriptions {
-    font-size: 13px;
+    font-size: 23px;
+  }
+  .skillSetLogos {
+    display: none;
   }
 }
