@@ -161,7 +161,7 @@ a {
   border-radius: var(--buttonAndLinks-border-radius);
   transition: var(--transition-for-hovers);
   font-size: 15px;
-
+  font-weight: 400;
   box-shadow: var(--box-shadow);
   margin: 8px 30px;
 }
@@ -181,11 +181,8 @@ a {
   display: flex;
   justify-content: center;
   border-radius: var(--buttonAndLinks-border-radius);
-
   padding: 15px 5px;
-
-  font-size: 16px;
-
+  font-size: 22px;
   transition: var(--transition-for-hovers);
 }
 
@@ -206,8 +203,8 @@ a {
   border-radius: var(--buttonAndLinks-border-radius);
   font-weight: 400;
   box-shadow: var(--box-shadow);
-  margin: 3px 3px;
-  max-width: 165px;
+  margin: 3px 5px;
+  max-width: 190px;
 }
 .about-me-link {
   background: var(--light-mode-body-background);
@@ -222,7 +219,7 @@ a {
 #link-to-github-page:hover,
 .see-my-project-link:hover,
 .about-me-link:hover {
-  font-size: 16.5px;
+  font-size: 22.5px;
 }
 #introduction-paragraph,
 .skillSetParagraph {
