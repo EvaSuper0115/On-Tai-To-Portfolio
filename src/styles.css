@@ -139,7 +139,9 @@ a {
 
   margin: 100px 0 30px 0;
 }
-
+.appDisplayCard {
+  box-shadow: var(--box-shadow);
+}
 .hoverProjectImage {
   transition: var(--transition-for-hovers);
 }
