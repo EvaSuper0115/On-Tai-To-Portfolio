@@ -250,9 +250,14 @@ a {
 .about-me-page-intro-row a {
   font-weight: 400;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   margin: 15px 32px;
   padding: 10px;
+  font-size: 32px;
+  transition: var(--transition-for-hovers);
+}
+.about-me-page-intro-row a:hover {
+  font-size: 32.5px;
 }
 #profile-picture {
   margin-top: auto;
@@ -386,7 +391,8 @@ small {
   .my-work-and-about-links-row {
     justify-content: center;
   }
-  .third-app-image {
+  .third-app-image,
+  .profile-picture-square-photo {
     display: none;
   }
 }
