@@ -391,3 +391,13 @@ small {
     font-size: 23px;
   }
 }
+.dark {
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(230, 228, 228, 0.694) 0%,
+      rgba(0, 0, 0, 0.883) 200%
+    );
+  background-blend-mode: multiply;
+  color: whitesmoke;
+}
