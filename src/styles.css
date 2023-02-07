@@ -155,7 +155,7 @@ a {
   transition: var(--transition-for-hovers);
 }
 .hoverProjectImage:hover {
-  transform: scale(1.25);
+  transform: scale(1.05);
   opacity: 0.9;
 }
 .launchAndViewCodesLinksRow {
