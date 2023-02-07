@@ -237,8 +237,7 @@ a {
 .skillSetParagraph {
   font-size: var(--paragraphs-font-size);
   line-height: 1.7;
-  display: flex;
-  justify-content: center;
+
   margin: var(--content-margin);
 
   padding: 20px;
@@ -248,11 +247,24 @@ a {
   justify-content: center;
   margin: 20px auto;
 }
-
+.about-me-page-intro-row a {
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-start;
+  margin: 15px 32px;
+  padding: 10px;
+}
 #profile-picture {
   margin-top: auto;
   margin-bottom: auto;
   border-radius: 3px;
+}
+#skills-set {
+  padding: 90px auto 10px auto;
+}
+.myStrength {
+  font-size: 21px;
+  text-align: center;
 }
 .paddingForButtonLinks {
   background: var(--my-work-link-background);
@@ -284,10 +296,6 @@ a {
 a {
   text-decoration: none;
   color: black;
-}
-.skillSet {
-  display: flex;
-  justify-content: center;
 }
 
 .skillSetLogos {
