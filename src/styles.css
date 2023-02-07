@@ -11,7 +11,7 @@
   --buttonAndLinks-border-radius: 50px 50px;
   --box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   --transition-for-hovers: all 200ms ease-in-out;
-  --light-mode-body-background: linear-gradient(to top, #eaf0f6 0%, white 100%);
+  --light-mode-body-background: linear-gradient(to top, #f3f9ff 0%, white 100%);
 }
 body {
   font-family: var(--font-family);
@@ -394,6 +394,9 @@ small {
   }
   .smallerLogoDescriptions {
     font-size: 23px;
+  }
+  .projectName {
+    font-size: 42px;
   }
 }
 .dark {
