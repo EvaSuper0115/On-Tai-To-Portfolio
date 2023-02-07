@@ -374,3 +374,14 @@ small {
     width: 64px;
   }
 }
+@media (min-width: 1000px) {
+  .appDescription {
+    font-size: 30px;
+  }
+  .smallerLogos {
+    width: 52px;
+  }
+  .smallerLogoDescriptions {
+    font-size: 23px;
+  }
+}
