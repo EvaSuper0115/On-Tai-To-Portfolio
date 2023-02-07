@@ -382,6 +382,10 @@ small {
   .third-app-image {
     display: none;
   }
+  .appDescription,
+  p {
+    color: black;
+  }
 }
 
 @media (max-width: 576px) {
