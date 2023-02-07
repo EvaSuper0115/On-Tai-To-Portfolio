@@ -11,7 +11,7 @@
   --buttonAndLinks-border-radius: 50px 50px;
   --box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   --transition-for-hovers: all 200ms ease-in-out;
-  --light-mode-body-background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  --light-mode-body-background: linear-gradient(to top, #eaf0f6 0%, white 100%);
 }
 body {
   font-family: var(--font-family);
@@ -373,13 +373,16 @@ small {
     justify-content: center;
   }
   .smallerLogos {
-    width: 52px;
+    display: none;
   }
   .smallerLogoDescriptions {
     font-size: 23px;
   }
   .skillSetLogos {
     width: 64px;
+  }
+  .third-app-image {
+    display: none;
   }
 }
 @media (min-width: 1000px) {
