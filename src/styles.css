@@ -137,6 +137,8 @@ a {
 .appDescription {
   font-size: var(--paragraphs-font-size);
   color: var(--paragraphs-font-color);
+  padding: 10px 30px;
+  line-height: 39px;
 }
 .projectName {
   font-size: 32px;
@@ -372,35 +374,33 @@ small {
   color: rgb(115, 202, 253);
 }
 
-@media (max-width: 576px) {
-  .my-work-and-about-links-row {
-    justify-content: center;
-  }
-  .smallerLogos {
+@media (max-width: 767px) {
+  .app-features {
     display: none;
   }
-  .smallerLogoDescriptions {
-    font-size: 23px;
-  }
-  .skillSetLogos {
-    width: 64px;
-  }
+
   .third-app-image {
     display: none;
   }
 }
-@media (min-width: 1000px) {
+
+@media (max-width: 576px) {
+  .my-work-and-about-links-row {
+    justify-content: center;
+  }
+}
+@media (min-width: 992px) {
   .appDescription {
-    font-size: 27px;
+    font-size: 24px;
   }
   .smallerLogos {
     width: 52px;
   }
   .smallerLogoDescriptions {
-    font-size: 23px;
+    font-size: 20px;
   }
   .projectName {
-    font-size: 42px;
+    font-size: 48px;
   }
 }
 .dark {
