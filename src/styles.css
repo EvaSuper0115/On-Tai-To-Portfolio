@@ -236,26 +236,24 @@ a {
 #introduction-paragraph,
 .skillSetParagraph {
   font-size: var(--paragraphs-font-size);
-  font-style: italic;
+  line-height: 1.7;
   display: flex;
   justify-content: center;
   margin: var(--content-margin);
-  text-align: center;
+
   padding: 20px;
 }
-
-#introduction-paragraph {
-  max-width: 700px;
-
-  border-radius: var(--buttonAndLinks-border-radius);
-  background: linear-gradient(
-    140deg,
-    rgb(246, 250, 255) 0%,
-    rgb(239, 237, 248) 0%,
-    rgb(255, 255, 255) 97%
-  );
+.about-me-page-intro-row {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
 }
 
+#profile-picture {
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 3px;
+}
 .paddingForButtonLinks {
   background: var(--my-work-link-background);
   color: antiquewhite;
@@ -389,6 +387,10 @@ small {
   p {
     color: black;
   }
+  #introduction-paragraph {
+    font-size: 21px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -408,6 +410,11 @@ small {
   }
   .projectName {
     font-size: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  #introduction-paragraph {
+    font-size: 21px;
   }
 }
 .dark {
