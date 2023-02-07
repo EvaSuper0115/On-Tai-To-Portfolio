@@ -247,18 +247,26 @@ a {
   justify-content: center;
   margin: 20px auto;
 }
-.about-me-page-intro-row a {
+.about-me-page-intro-row a,
+.about-me-arrow {
   font-weight: 400;
   display: flex;
   justify-content: flex-end;
-  margin: 15px 32px;
+  margin: 20px 32px;
   padding: 10px;
   font-size: 32px;
   transition: var(--transition-for-hovers);
 }
-.about-me-page-intro-row a:hover {
+.about-me-page-intro-row a:hover,
+.about-me-arrow:hover {
   font-size: 32.5px;
 }
+.aboutMeArrowText {
+  position: relative;
+  top: 0px;
+  left: -2px;
+}
+
 #profile-picture {
   margin-top: auto;
   margin-bottom: auto;
