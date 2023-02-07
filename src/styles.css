@@ -2,11 +2,12 @@
   --content-margin: 3px 20px;
   --font-family: "Poppins", sans-serif;
   --my-work-link-background: linear-gradient(
-    to right,
-    #243949 0%,
-    #517fa4 100%
+    90deg,
+    rgba(0, 49, 83, 1) 0%,
+    rgba(17, 38, 97, 1) 61%,
+    rgba(3, 108, 130, 1) 100%
   );
-  --paragraphs-font-size: 20px;
+  --paragraphs-font-size: 17px;
   --buttonAndLinks-border-radius: 50px 50px;
   --box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   --transition-for-hovers: all 200ms ease-in-out;
@@ -136,7 +137,7 @@ a {
 .projectName {
   font-size: 32px;
 
-  margin: 60px 0 10px 0;
+  margin: 100px 0 30px 0;
 }
 
 .hoverProjectImage {
@@ -160,7 +161,7 @@ a {
   color: aliceblue;
   border-radius: var(--buttonAndLinks-border-radius);
   transition: var(--transition-for-hovers);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   box-shadow: var(--box-shadow);
   margin: 8px 30px;
@@ -171,7 +172,7 @@ a {
 }
 .launchProjectLinks:hover,
 .viewSourceCodeLinks:hover {
-  font-size: 15.5px;
+  font-size: 16.5px;
 }
 .gitHubLinkButton {
   display: flex;
@@ -301,7 +302,12 @@ small {
   justify-content: center;
 }
 .navbarDecoration {
-  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 49, 83, 1) 0%,
+    rgba(17, 38, 97, 1) 61%,
+    rgba(3, 108, 130, 1) 100%
+  );
   opacity: 0.95;
   border-radius: 0 0 2px 2px;
   box-shadow: var(--box-shadow);
@@ -376,7 +382,7 @@ small {
 }
 @media (min-width: 1000px) {
   .appDescription {
-    font-size: 30px;
+    font-size: 27px;
   }
   .smallerLogos {
     width: 52px;
