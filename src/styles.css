@@ -258,11 +258,13 @@ a {
   padding: 10px;
   font-size: 16px;
   transition: var(--transition-for-hovers);
+  color: var(--paragraphs-font-color);
 }
 
 .directory-arrow:hover,
 .directory-arrow-left:hover {
   font-size: 19.5px;
+  color: black;
 }
 .directoryArrowText {
   position: relative;
