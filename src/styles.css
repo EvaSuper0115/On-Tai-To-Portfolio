@@ -247,24 +247,25 @@ a {
   justify-content: center;
   margin: 20px auto;
 }
-.about-me-page-intro-row a,
-.about-me-arrow {
+.directoryArrowText,
+.directory-arrow {
   font-weight: 400;
   display: flex;
   justify-content: flex-end;
-  margin: 20px 32px;
+  margin: 20px 30px -23px 30px;
   padding: 10px;
-  font-size: 32px;
+  font-size: 16px;
   transition: var(--transition-for-hovers);
 }
-.about-me-page-intro-row a:hover,
-.about-me-arrow:hover {
-  font-size: 32.5px;
+
+.directory-arrow:hover {
+  font-size: 18px;
 }
-.aboutMeArrowText {
+.directoryArrowText {
   position: relative;
-  top: 0px;
-  left: -2px;
+  top: -35px;
+  left: 34px;
+  text-align: right;
 }
 
 #profile-picture {
