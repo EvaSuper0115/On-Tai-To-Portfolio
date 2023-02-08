@@ -248,7 +248,9 @@ a {
   margin: 20px auto;
 }
 .directoryArrowText,
-.directory-arrow {
+.directory-arrow,
+.directoryArrowTextLeft,
+.directory-arrow-left {
   font-weight: 400;
   display: flex;
   justify-content: flex-end;
@@ -258,8 +260,9 @@ a {
   transition: var(--transition-for-hovers);
 }
 
-.directory-arrow:hover {
-  font-size: 18px;
+.directory-arrow:hover,
+.directory-arrow-left:hover {
+  font-size: 19.5px;
 }
 .directoryArrowText {
   position: relative;
@@ -267,7 +270,15 @@ a {
   left: 34px;
   text-align: right;
 }
-
+.directory-arrow-left {
+  display: flex;
+  justify-content: flex-start;
+}
+.directoryArrowTextLeft {
+  position: relative;
+  top: -34px;
+  left: -35px;
+}
 #profile-picture {
   margin-top: auto;
   margin-bottom: auto;
@@ -385,6 +396,7 @@ small {
 
 .contactMeMessage {
   font-size: 22px;
+  margin: var(--content-margin);
 }
 .footer {
   font-size: 17px;
