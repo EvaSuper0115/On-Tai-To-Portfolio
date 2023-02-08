@@ -30,6 +30,10 @@ h2 {
 a {
   font-weight: 300;
 }
+.fontIcons {
+  position: relative;
+  left: -4px;
+}
 /* homepage styles */
 .homepage-top-section {
   background-image: url("../src/background-picture-rainy-city.jpg");
