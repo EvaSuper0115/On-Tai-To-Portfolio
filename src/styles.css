@@ -350,12 +350,7 @@ small {
   justify-content: center;
 }
 .navbarDecoration {
-  background-image: linear-gradient(
-    90deg,
-    rgba(0, 49, 83, 1) 0%,
-    rgba(17, 38, 97, 1) 61%,
-    rgba(3, 108, 130, 1) 100%
-  );
+  background-image: var(--my-work-link-background);
   opacity: 0.95;
   border-radius: 0 0 2px 2px;
   box-shadow: var(--box-shadow);
@@ -440,7 +435,7 @@ small {
 
 @media (min-width: 992px) {
   .appDescription {
-    font-size: 24px;
+    font-size: 19px;
   }
   .smallerLogos {
     width: 52px;
@@ -455,6 +450,9 @@ small {
 @media (min-width: 1200px) {
   #introduction-paragraph {
     font-size: 21px;
+  }
+  .appDescription {
+    font-size: 24px;
   }
 }
 .dark {
