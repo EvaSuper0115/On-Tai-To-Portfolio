@@ -1,13 +1,9 @@
 :root {
   --content-margin: 3px 20px;
   --font-family: "Poppins", sans-serif;
-  --my-work-link-background: linear-gradient(
-    90deg,
-    rgba(0, 49, 83, 1) 0%,
-    rgba(17, 38, 97, 1) 61%,
-    rgba(3, 108, 130, 1) 100%
-  );
-  --paragraphs-font-size: 17px;
+  --my-work-link-background: rgb(59, 87, 124);
+  --accent-font-color: rgb(0, 0, 0);
+  --paragraphs-font-size: 13px;
   --paragraphs-font-color: rgb(103, 103, 103);
 
   --buttonAndLinks-border-radius: 50px 50px;
@@ -19,6 +15,7 @@ body {
   font-family: var(--font-family);
   background: var(--light-mode-body-background);
   font-weight: 200;
+  color: rgb(40, 48, 63);
 }
 p {
   font-size: var(--paragraphs-font-size);
@@ -36,17 +33,23 @@ a {
 }
 /* homepage styles */
 .homepage-top-section {
-  background-image: url("../src/background-picture-rainy-city.jpg");
+  background-image: linear-gradient(
+    to top,
+    #ffffff 0%,
+    #b1cbff 100%,
+    #183b83 100%,
+    #414f6a 100%
+  );
   background-repeat: no-repeat;
   background-size: cover;
-  color: aliceblue;
+
   padding: 50px 0;
 }
 #my-name {
   display: flex;
   justify-content: flex-start;
   font-family: "Yeseva One", cursive;
-  color: rgb(255, 255, 255);
+  color: var(--accent-font-color);
   font-size: 76px;
   margin-left: 70px;
   margin-right: 70px;
@@ -148,7 +151,7 @@ a {
   line-height: 32px;
 }
 .projectName {
-  font-size: 32px;
+  font-size: 28px;
   font-family: "Yeseva One", cursive;
   margin: 100px 0 30px 0;
 }
@@ -158,6 +161,7 @@ a {
 .hoverProjectImage {
   transition: var(--transition-for-hovers);
 }
+
 .hoverProjectImage:hover {
   transform: scale(1.05);
   opacity: 0.9;
@@ -290,11 +294,9 @@ a {
   margin-bottom: auto;
   border-radius: 3px;
 }
-#skills-set {
-  padding: 90px auto 10px auto;
-}
+
 .myStrength {
-  font-size: 21px;
+  font-size: 18px;
   text-align: center;
 }
 .paddingForButtonLinks {
@@ -306,7 +308,9 @@ a {
   transition: var(--transition-for-hovers);
   border-radius: var(--buttonAndLinks-border-radius);
 }
-
+.card-body a {
+  color: rgb(115, 202, 253);
+}
 .contactlinks {
   border-radius: var(--buttonAndLinks-border-radius);
   background: var(--my-work-link-background);
@@ -350,17 +354,17 @@ small {
   justify-content: center;
 }
 .navbarDecoration {
-  background-image: var(--my-work-link-background);
+  background-image: var(--light-mode-body-background);
   opacity: 0.95;
   border-radius: 0 0 2px 2px;
   box-shadow: var(--box-shadow);
   padding: 0;
   min-height: 70px;
 }
-
+/*
 .navbarButtonDecoration {
   background: rgb(231, 231, 231, 0.9);
-}
+}*/
 .my-name-at-nav-bar {
   font-family: "Yeseva One", cursive;
 }
@@ -369,18 +373,16 @@ small {
   transition: var(--transition-for-hovers);
   padding: 9px 1px;
   border-radius: var(--buttonAndLinks-border-radius);
-  color: aliceblue;
+  font-weight: 500;
 }
 
 .navbarTexts {
   font-size: 17px;
-
+  font-weight: 500;
   transition: var(--transition-for-hovers);
   padding: 9px 1px;
 
   border-radius: var(--buttonAndLinks-border-radius);
-
-  color: aliceblue;
 }
 
 .navbarName:hover {
@@ -435,7 +437,7 @@ small {
 
 @media (min-width: 992px) {
   .appDescription {
-    font-size: 19px;
+    font-size: 16px;
   }
   .smallerLogos {
     width: 52px;
@@ -449,10 +451,10 @@ small {
 }
 @media (min-width: 1200px) {
   #introduction-paragraph {
-    font-size: 21px;
+    font-size: 20px;
   }
   .appDescription {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 .dark {
