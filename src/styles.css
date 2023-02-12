@@ -145,7 +145,7 @@ a {
   font-size: var(--paragraphs-font-size);
   color: var(--paragraphs-font-color);
   padding: 10px 30px;
-  line-height: 39px;
+  line-height: 32px;
 }
 .projectName {
   font-size: 32px;
