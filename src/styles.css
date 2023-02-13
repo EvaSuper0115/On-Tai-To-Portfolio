@@ -39,6 +39,10 @@ strong {
   transform: scale(1.02);
   opacity: 0.9;
 }
+.card-title {
+  font-weight: 600;
+  font-size: 28px;
+}
 .fontIcons {
   position: relative;
   left: -4px;
