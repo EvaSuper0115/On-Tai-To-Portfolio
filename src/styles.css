@@ -1,7 +1,7 @@
 :root {
   --content-margin: 3px 20px;
   --font-family: "Sarabun", sans-serif;
-  --my-work-link-background: rgb(141 166 199);
+  --my-work-link-background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   --accent-font-color: rgb(0, 0, 0);
   --paragraphs-font-size: 13px;
   --paragraphs-font-color: rgb(103, 103, 103);
@@ -29,6 +29,9 @@ a {
 }
 strong {
   color: black;
+}
+img {
+  border-radius: 8px;
 }
 .card {
   border: 0ch;
