@@ -308,6 +308,10 @@ a {
   transition: var(--transition-for-hovers);
   border-radius: var(--buttonAndLinks-border-radius);
 }
+
+.zoom-in-curser:hover {
+  cursor: zoom-in;
+}
 .card-body a {
   color: rgb(115, 202, 253);
 }
