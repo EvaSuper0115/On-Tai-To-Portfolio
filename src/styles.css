@@ -1,9 +1,9 @@
 :root {
   --content-margin: 3px 20px;
   --font-family: "Sarabun", sans-serif;
-  --my-work-link-background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  --my-work-link-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --accent-font-color: rgb(0, 0, 0);
-  --paragraphs-font-size: 13px;
+  --paragraphs-font-size: 17px;
   --paragraphs-font-color: rgb(103, 103, 103);
 
   --buttonAndLinks-border-radius: 50px 50px;
@@ -167,7 +167,7 @@ img {
   font-size: var(--paragraphs-font-size);
   color: var(--paragraphs-font-color);
   padding: 10px 30px;
-  line-height: 32px;
+  line-height: 38px;
 }
 .projectName {
   font-size: 28px;
@@ -328,14 +328,14 @@ img {
 }
 .contactlinks {
   border-radius: var(--buttonAndLinks-border-radius);
-  background: var(--my-work-link-background);
+  background-image: linear-gradient(to top, #c7ddf6 0%, #e7f0fd 100%);
   padding: 10px 5px;
   flex: 1;
   text-align: center;
   font-size: 18px;
 
   transition: var(--transition-for-hovers);
-  color: antiquewhite;
+
   margin-top: 3px;
   margin-bottom: 3px;
 }
