@@ -170,7 +170,7 @@ img {
   line-height: 38px;
 }
 .projectName {
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 700;
   color: black;
   margin: 100px 0 30px 0;
@@ -251,6 +251,9 @@ img {
 .about-me-link:hover {
   font-size: 22.5px;
 }
+#skills-set {
+  margin-top: 100px;
+}
 #introduction-paragraph,
 .skillSetParagraph {
   font-size: var(--paragraphs-font-size);
@@ -265,6 +268,9 @@ img {
   justify-content: center;
   margin: 20px auto;
   font-family: "Spline Sans Mono", monospace;
+}
+.certificatesRow {
+  margin-top: 100px;
 }
 .directoryArrowText,
 .directory-arrow,
