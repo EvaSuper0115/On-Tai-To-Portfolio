@@ -41,7 +41,7 @@ img {
 }
 .card:hover {
   transform: scale(1.02);
-  opacity: 0.9;
+  filter: brightness(105%);
 }
 .card-title {
   font-weight: 600;
@@ -52,24 +52,30 @@ img {
   left: -4px;
 }
 /* homepage styles */
-.homepage-top-section {
-  background-image: linear-gradient(
-    to top,
-    #ffffff 0%,
-    #ebf3ff 100%,
-    #ffffff 100%,
-    #fbfcff 100%
-  );
+.homepage-hero {
+  background-image: url(do-something-great-backgroud.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-position: center;
   padding: 50px 0;
+  color: white;
 }
+.page-hero-text-wrap {
+  background: rgb(0 0 0 / 80%);
+  border-radius: 12px;
+  padding: 20px;
+  transition: var(--transition-for-hovers);
+}
+.page-hero-text-wrap:hover {
+  background: rgb(0 0 0 / 35%);
+  color: rgba(255, 253, 253, 0);
+}
+
 #my-name {
   display: flex;
   justify-content: flex-start;
   font-weight: 800;
-  color: var(--accent-font-color);
+
   font-size: 76px;
   margin-left: 70px;
   margin-right: 70px;
@@ -389,8 +395,7 @@ small {
 .navbarButtonDecoration {
   background: rgb(231, 231, 231, 0.9);
 }*/
-.my-name-at-nav-bar {
-}
+
 .navbarName {
   font-size: 22px;
   transition: var(--transition-for-hovers);
