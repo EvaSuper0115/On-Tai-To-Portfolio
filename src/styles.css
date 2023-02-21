@@ -54,6 +54,7 @@ img {
   left: -4px;
 }
 /* homepage styles */
+
 .homepage-hero {
   background-image: url(do-something-great-backgroud.jpg);
   background-repeat: no-repeat;
@@ -69,8 +70,7 @@ img {
   transition: var(--transition-for-hovers);
 }
 .page-hero-text-wrap:hover {
-  background: rgb(0 0 0 / 35%);
-  color: rgba(255, 253, 253, 0);
+  background: rgb(0 0 0 / 60%);
 }
 
 #my-name {
