@@ -4,19 +4,20 @@
   --my-work-link-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --accent-font-color: rgb(0, 0, 0);
   --paragraphs-font-size: 17px;
-  --paragraphs-font-color: rgb(103, 103, 103);
+  --paragraphs-font-color: rgb(196, 196, 196);
 
   --buttonAndLinks-border-radius: 50px 50px;
   --box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   --transition-for-hovers: all 200ms ease-in-out;
   --light-mode-body-background: linear-gradient(to top, #f3f9ff 0%, white 100%);
-  --dark-mode: black;
+
+  --dark-mode-body-background: rgb(32, 32, 32);
 }
 body {
   font-family: var(--font-family);
-  background: var(--light-mode-body-background);
+  background: var(--dark-mode-body-background);
   font-weight: 200;
-  color: rgb(40, 48, 63);
+  color: white;
 }
 p {
   font-size: var(--paragraphs-font-size);
@@ -28,9 +29,7 @@ h2 {
 a {
   font-weight: 300;
 }
-strong {
-  color: black;
-}
+
 img {
   border-radius: 8px;
 }
@@ -38,11 +37,14 @@ img {
   border: 0ch;
   border-radius: 19px;
   transition: var(--transition-for-hovers);
+  background-color: var(--dark-mode-body-background);
 }
 .card:hover {
   transform: scale(1.02);
   filter: brightness(105%);
+  background-color: rgb(54, 54, 54);
 }
+
 .card-title {
   font-weight: 600;
   font-size: 28px;
@@ -124,6 +126,7 @@ img {
   justify-content: flex-start;
   font-style: italic;
   margin-top: 20px;
+  color: white;
 }
 
 #profile-photo {
@@ -180,7 +183,7 @@ img {
 .projectName {
   font-size: 34px;
   font-weight: 700;
-  color: black;
+
   margin: 100px 0 30px 0;
 }
 
@@ -297,7 +300,7 @@ img {
 .directory-arrow:hover,
 .directory-arrow-left:hover {
   font-size: 19.5px;
-  color: black;
+  color: white;
 }
 .directoryArrowText {
   position: relative;
@@ -384,7 +387,7 @@ small {
   justify-content: center;
 }
 .navbarDecoration {
-  background-image: var(--light-mode-body-background);
+  background: black;
   opacity: 0.95;
   border-radius: 0 0 2px 2px;
   box-shadow: var(--box-shadow);
@@ -402,6 +405,7 @@ small {
   padding: 9px 1px;
   border-radius: var(--buttonAndLinks-border-radius);
   font-weight: 500;
+  color: white;
 }
 
 .navbarTexts {
@@ -409,7 +413,7 @@ small {
   font-weight: 500;
   transition: var(--transition-for-hovers);
   padding: 9px 1px;
-
+  color: white;
   border-radius: var(--buttonAndLinks-border-radius);
 }
 
@@ -453,10 +457,6 @@ small {
     display: none;
   }
 
-  .appDescription,
-  p {
-    color: black;
-  }
   #introduction-paragraph {
     font-size: 21px;
     text-align: center;
@@ -484,14 +484,4 @@ small {
   .appDescription {
     font-size: 18px;
   }
-}
-.dark {
-  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
-    linear-gradient(
-      to top,
-      rgba(230, 228, 228, 0.694) 0%,
-      rgba(0, 0, 0, 0.883) 200%
-    );
-  background-blend-mode: multiply;
-  color: whitesmoke;
 }
