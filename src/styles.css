@@ -33,6 +33,11 @@ a {
 img {
   border-radius: 8px;
 }
+.video-adjustment {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 15px;
+}
 .card {
   border: 0ch;
   border-radius: 19px;
@@ -40,8 +45,7 @@ img {
   background-color: var(--dark-mode-body-background);
 }
 .card:hover {
-  transform: scale(1.02);
-  filter: brightness(105%);
+  transform: scale(1.01);
   background-color: rgb(54, 54, 54);
 }
 
