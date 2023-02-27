@@ -334,6 +334,13 @@
                       alt="responsiveLogo"
                     /><small class="smallerLogoDescriptions">React</small>
                   </div>
+                  <div class="col-sm-4">
+                    <img
+                      class="skillSetLogos smallerLogos"
+                      src="./src/skillset-icons/bootstrap.png"
+                      alt="bootstrapLogo"
+                    /><small class="smallerLogoDescriptions">Bootstrap</small>
+                  </div>
                 </div>
               </div>
               <div class="row launchAndViewCodesLinksRow">
@@ -482,12 +489,13 @@
           <div class="row">
             <div class="col-md-6 card shadow p-3 appDisplayCard">
               <div class="row">
-                <img
-                  id="world-clock-computer-app"
-                  class="hoverProjectImage img-fluid p-1 col-md-12"
-                  src="./src/world-clock-desktop.png"
-                  alt="world-clock-computer-app"
-                />
+                <video
+                  class="hoverProjectImage video-adjustment p-1 col-md-6"
+                  controls
+                >
+                  <source src="src/World-Clock.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
               <div class="row">
                 <img
@@ -505,10 +513,11 @@
               </div>
             </div>
             <div class="col-md-6 appDescription">
-              It detects users' timezone and allows them to add selected
-              international timezones to the clocks. It supports mobiles,
-              tablets and desktops, UX is also enhanced by offering several
-              theme settings.<br />
+              With the use of Moment.js, it detects users' timezone in the first
+              widget and allows them to add selected international timezones to
+              the clocks in other widgets. It supports mobiles, tablets and
+              desktops, UX is also enhanced by offering several theme
+              settings.<br />
               <div class="app-features">
                 <h4 class="smallSubtitles">Features</h4>
                 <div class="row">
