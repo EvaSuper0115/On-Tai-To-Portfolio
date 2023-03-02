@@ -33,20 +33,15 @@ a {
 img {
   border-radius: 8px;
 }
+
 .video-adjustment {
   width: 100%;
   aspect-ratio: 16/9;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 .card {
   border: 0ch;
-  border-radius: 19px;
-  transition: var(--transition-for-hovers);
   background-color: var(--dark-mode-body-background);
-}
-.card:hover {
-  transform: scale(1.01);
-  background-color: rgb(54, 54, 54);
 }
 
 .card-title {
@@ -446,6 +441,13 @@ small {
 .footer a {
   text-decoration: underline;
   color: rgb(115, 202, 253);
+}
+.overflow-x-auto {
+  overflow-x: auto;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 30px;
 }
 @media (max-width: 576px) {
   .my-work-and-about-links-row {
