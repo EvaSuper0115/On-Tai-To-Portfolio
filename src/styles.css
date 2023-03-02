@@ -1,6 +1,6 @@
 :root {
   --content-margin: 3px 20px;
-  --font-family: "Sarabun", sans-serif;
+  --font-family: "Inter", sans-serif;
   --my-work-link-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --accent-font-color: rgb(0, 0, 0);
   --paragraphs-font-size: 17px;
@@ -277,7 +277,6 @@ img {
   display: flex;
   justify-content: center;
   margin: 20px auto;
-  font-family: "Spline Sans Mono", monospace;
 }
 .certificatesRow {
   margin-top: 100px;
@@ -376,7 +375,6 @@ a {
 }
 small {
   font-size: 15px;
-  font-family: "Urbanist", sans-serif;
   text-align: center;
   font-weight: 400;
 }
