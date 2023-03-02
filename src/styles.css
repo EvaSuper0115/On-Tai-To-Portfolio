@@ -11,7 +11,11 @@
   --transition-for-hovers: all 200ms ease-in-out;
   --light-mode-body-background: linear-gradient(to top, #f3f9ff 0%, white 100%);
 
-  --dark-mode-body-background: rgb(32, 32, 32);
+  --dark-mode-body-background: linear-gradient(
+    to right,
+    #434343 0%,
+    black 100%
+  );
 }
 body {
   font-family: var(--font-family);
@@ -33,6 +37,7 @@ a {
 img {
   border-radius: 8px;
 }
+
 .row {
   justify-content: center;
 }
@@ -61,21 +66,8 @@ img {
 /* homepage styles */
 
 .homepage-hero {
-  background-image: url(do-something-great-backgroud.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   padding: 50px 0;
   color: white;
-}
-.page-hero-text-wrap {
-  background: rgb(0 0 0 / 80%);
-  border-radius: 12px;
-  padding: 20px;
-  transition: var(--transition-for-hovers);
-}
-.page-hero-text-wrap:hover {
-  background: rgb(0 0 0 / 60%);
 }
 
 #my-name {
@@ -464,6 +456,11 @@ small {
   .project-img-adjustment {
     max-width: 60%;
     height: 100%;
+  }
+  #introduction-paragraph,
+  .myStrength {
+    margin: 0;
+    padding: 0;
   }
 }
 @media (max-width: 1000px) {
