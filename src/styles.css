@@ -33,7 +33,13 @@ a {
 img {
   border-radius: 8px;
 }
-
+.row {
+  justify-content: center;
+}
+.project-img-adjustment {
+  max-width: 40%;
+  height: 100%;
+}
 .video-adjustment {
   width: 100%;
   aspect-ratio: 16/9;
@@ -455,6 +461,10 @@ small {
   .profile-picture-square-photo {
     display: none;
   }
+  .project-img-adjustment {
+    max-width: 60%;
+    height: 100%;
+  }
 }
 @media (max-width: 1000px) {
   .app-features {
@@ -487,5 +497,9 @@ small {
   }
   .appDescription {
     font-size: 18px;
+  }
+  .project-img-adjustment {
+    max-width: 35%;
+    height: 100%;
   }
 }
