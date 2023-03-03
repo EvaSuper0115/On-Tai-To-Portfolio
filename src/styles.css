@@ -242,7 +242,7 @@ img {
   font-weight: 400;
   box-shadow: var(--box-shadow);
   margin: 3px 5px;
-  max-width: 190px;
+  max-width: 500px;
 }
 .about-me-link {
   background: var(--light-mode-body-background);
