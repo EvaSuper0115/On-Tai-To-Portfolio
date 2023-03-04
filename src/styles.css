@@ -63,6 +63,9 @@ img {
   position: relative;
   left: -4px;
 }
+.fa-brands {
+  margin-left: 5px;
+}
 /* homepage styles */
 
 .homepage-hero {
