@@ -75,24 +75,17 @@ img {
 
 #my-name {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   font-weight: 800;
-
-  font-size: 76px;
+  font-family: "Allura", cursive;
+  font-size: 135px;
   margin-left: 70px;
   margin-right: 70px;
-}
-.hi-my-name-is {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 65px;
-  margin-right: 65px;
-  font-weight: 300;
 }
 
 #frontend-developer-title {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   margin-left: 70px;
   margin-right: 70px;
   font-weight: 400;
@@ -138,7 +131,7 @@ img {
 }
 .my-work-and-about-links-row {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   margin-left: 70px;
   margin-right: 70px;
 }
