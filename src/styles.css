@@ -1,16 +1,14 @@
 :root {
   --content-margin: 3px 20px;
   --font-family: "Inter", sans-serif;
-  --my-work-link-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --my-work-link-background: linear-gradient(135deg, #5900d3 0%, #764ba2 100%);
   --accent-font-color: rgb(0, 0, 0);
   --paragraphs-font-size: 17px;
   --paragraphs-font-color: rgb(196, 196, 196);
-
   --buttonAndLinks-border-radius: 50px 50px;
   --box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   --transition-for-hovers: all 200ms ease-in-out;
   --light-mode-body-background: linear-gradient(to top, #f3f9ff 0%, white 100%);
-
   --dark-mode-body-background: linear-gradient(
     to right,
     #434343 0%,
@@ -52,7 +50,7 @@ img {
 }
 .card {
   border: 0ch;
-  background-color: var(--dark-mode-body-background);
+  background-color: transparent;
 }
 
 .card-title {
@@ -69,7 +67,7 @@ img {
 /* homepage styles */
 
 .homepage-hero {
-  padding: 50px 0;
+  padding: 80px 0;
   color: white;
 }
 
@@ -121,7 +119,9 @@ img {
   margin-top: 20px;
   color: white;
 }
-
+.app-features {
+  padding: 10px 0;
+}
 #profile-photo {
   display: flex;
   justify-content: flex-start;
@@ -169,7 +169,7 @@ img {
 .appDescription {
   font-size: var(--paragraphs-font-size);
   color: var(--paragraphs-font-color);
-  padding: 10px 30px;
+  padding: 20px;
   line-height: 38px;
   font-weight: 400;
 }
@@ -181,8 +181,7 @@ img {
 }
 
 .launchAndViewCodesLinksRow {
-  margin-top: auto;
-  margin-bottom: auto;
+  padding: 20px;
 }
 
 .launchProjectLinks,
@@ -337,16 +336,15 @@ img {
 }
 .contactlinks {
   border-radius: var(--buttonAndLinks-border-radius);
-  background-image: linear-gradient(to top, #c7ddf6 0%, #e7f0fd 100%);
+  background-image: var(--my-work-link-background);
   padding: 10px 5px;
   flex: 1;
   text-align: center;
   font-size: 18px;
-
   transition: var(--transition-for-hovers);
-
   margin-top: 3px;
   margin-bottom: 3px;
+  color: white;
 }
 .contactlinks:hover {
   text-decoration: underline;
@@ -478,7 +476,7 @@ small {
     width: 52px;
   }
   .smallerLogoDescriptions {
-    font-size: 17px;
+    font-size: 14px;
   }
   .projectName {
     font-size: 48px;
