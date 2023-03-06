@@ -439,6 +439,11 @@ small {
   width: 100%;
   gap: 30px;
 }
+@media (max-width: 375px) {
+  #my-name {
+    font-size: 117px;
+  }
+}
 @media (max-width: 576px) {
   .my-work-and-about-links-row {
     justify-content: center;
