@@ -167,7 +167,7 @@ img {
 
 .workflow-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1.4fr 1.3fr 1.2fr;
+  grid-template-columns: 1.5fr 1.4fr;
   grid-gap: 10px;
   padding: 20px;
   align-items: center;
@@ -553,6 +553,9 @@ small {
   .service-grid {
     grid-template-columns: 1fr;
   }
+  .workflow-grid {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 1000px) {
   .app-features {
@@ -562,9 +565,6 @@ small {
   #introduction-paragraph {
     font-size: 21px;
     text-align: center;
-  }
-  .workflow-grid {
-    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -580,6 +580,9 @@ small {
   }
   .projectName {
     font-size: 48px;
+  }
+  .workflow-grid {
+    grid-template-columns: 1.5fr 1.4fr 1.3fr 1.2fr;
   }
 }
 @media (min-width: 1200px) {
