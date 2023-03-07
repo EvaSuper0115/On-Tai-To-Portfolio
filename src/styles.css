@@ -564,7 +564,7 @@ small {
     text-align: center;
   }
   .workflow-grid {
-    grid-template-columns: 1fr 1.1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
