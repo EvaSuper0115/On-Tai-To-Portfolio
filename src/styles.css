@@ -34,7 +34,7 @@ a {
 }
 
 img {
-  border-radius: 8px;
+  border-radius: 1px;
 }
 
 .row {
@@ -371,7 +371,7 @@ img {
 }
 .service-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 20px;
   grid-gap: 3vh;
@@ -379,7 +379,7 @@ img {
 .service-grid div {
   display: block;
   margin: 0 auto;
-  width: 210px;
+  width: 170px;
   aspect-ratio: 1/1;
   padding: 10px;
   border-radius: 50%;
@@ -393,7 +393,8 @@ img {
 
 .web-building-circle,
 .app-building-circle,
-.collaboration-circle {
+.collaboration-circle,
+.renovation-circle {
   background-image: linear-gradient(
       181deg,
       rgb(236, 234, 234, 0.4) 0%,
@@ -420,6 +421,14 @@ img {
     ),
     url(collaboration.png);
 }
+.renovation-circle {
+  background-image: linear-gradient(
+      181deg,
+      rgb(236, 234, 234, 0.4) 0%,
+      rgb(0, 0, 0, 0.4) 97%
+    ),
+    url(web-renovation.png);
+}
 .service-titles {
   position: relative;
   left: -40px;
@@ -428,6 +437,7 @@ img {
   background: var(--my-work-link-background);
   border-radius: 10px;
   opacity: 0.85;
+  font-size: 20px;
 }
 .contactlinks {
   border-radius: var(--buttonAndLinks-border-radius);
@@ -562,11 +572,11 @@ small {
   .largeTitle {
     font-size: 50px;
   }
-}
-@media (max-width: 820px) {
   .service-grid {
     grid-template-columns: 1fr;
   }
+}
+@media (max-width: 820px) {
   .workflow-grid {
     grid-template-columns: 1fr;
   }
@@ -597,6 +607,9 @@ small {
   }
   .workflow-grid {
     grid-template-columns: 1.5fr 1.4fr 1.3fr 1.2fr;
+  }
+  .service-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (min-width: 1200px) {
