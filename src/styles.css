@@ -471,9 +471,14 @@ a {
   width: 48px;
 }
 small {
-  font-size: 15px;
+  font-size: 11px;
   text-align: center;
   font-weight: 400;
+  line-height: 1.5;
+}
+
+.short-line-height {
+  line-height: 0.5;
 }
 .smallerLogoDescriptions {
   font-size: 10px;
@@ -531,7 +536,8 @@ small {
   margin-top: 60px;
   margin-bottom: 40px;
 }
-.footer a {
+.footer a,
+small a {
   text-decoration: underline;
   color: rgb(115, 202, 253);
 }
