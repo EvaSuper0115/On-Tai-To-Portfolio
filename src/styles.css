@@ -216,30 +216,55 @@ img {
 }
 
 .launchAndViewCodesLinksRow {
-  padding: 20px;
+  padding: 7px;
+  gap: 8px;
+  max-width: 400px;
 }
 
 .launchProjectLinks,
 .viewSourceCodeLinks {
-  padding: 15px 5px;
   display: flex;
   justify-content: center;
-  background: var(--my-work-link-background);
-  color: aliceblue;
-  border-radius: var(--buttonAndLinks-border-radius);
-  transition: var(--transition-for-hovers);
-  font-size: 16px;
-  font-weight: 400;
-  box-shadow: var(--box-shadow);
-  margin: 8px 30px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 5px solid;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+  color: rgb(205, 204, 204);
 }
-.viewSourceCodeLinks {
-  background: var(--light-mode-body-background);
-  color: black;
+.launchProjectLinks::after {
+  content: "Launch app";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: rgb(205, 204, 204);
+  color: #111;
+  transition: 0.7s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.launchProjectLinks:hover,
-.viewSourceCodeLinks:hover {
-  transform: scale(1.01);
+.launchProjectLinks:hover.launchProjectLinks::after,
+.viewSourceCodeLinks:hover.viewSourceCodeLinks::after {
+  transform: translateX(100%);
+}
+.viewSourceCodeLinks::after {
+  content: "Source code";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: rgb(205, 204, 204);
+  color: #111;
+  transition: 0.7s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .gitHubLinkButton {
   display: flex;
@@ -551,6 +576,11 @@ small a {
 .align-item-center {
   display: flex;
   align-items: center;
+}
+@media (max-width: 1024px) {
+  * {
+    transform: none !important;
+  }
 }
 @media (max-width: 375px) {
   #my-name {
