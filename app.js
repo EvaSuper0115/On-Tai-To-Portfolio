@@ -35,8 +35,8 @@ window.addEventListener("scroll", () => {
   projectNames[0].style.transform = `translateY(calc(730px - ${
     offsetY * 1.2
   }px))`;
-  appShowcaseVideos[0].style.transform = `translate(calc(800px - ${offsetY}px),calc((620px - ${offsetY}px)))`;
-  appDescriptions[0].style.transform = `translate(calc(800px - ${offsetY}px),calc((620px - ${offsetY}px)))`;
+  appShowcaseVideos[0].style.transform = `translate(calc(840px - ${offsetY}px),calc((620px - ${offsetY}px)))`;
+  appDescriptions[0].style.transform = `translate(calc(840px - ${offsetY}px),calc((620px - ${offsetY}px)))`;
   launchCodeLinksDiv[0].style.transform = `translateY(calc(720px - ${
     offsetY * 1.1
   }px))`;
@@ -44,8 +44,8 @@ window.addEventListener("scroll", () => {
   projectNames[1].style.transform = `translateY(calc(840px - ${
     offsetY * 1.2
   }px))`;
-  appShowcaseVideos[1].style.transform = `translate(calc(1150px - ${offsetY}px),calc((640px - ${offsetY}px)))`;
-  appDescriptions[1].style.transform = `translate(calc(1150px - ${offsetY}px),calc((640px - ${offsetY}px)))`;
+  appShowcaseVideos[1].style.transform = `translate(calc(1170px - ${offsetY}px),calc((640px - ${offsetY}px)))`;
+  appDescriptions[1].style.transform = `translate(calc(1170px - ${offsetY}px),calc((640px - ${offsetY}px)))`;
   launchCodeLinksDiv[1].style.transform = `translateY(calc(800px - ${
     offsetY * 1.1
   }px))`;
@@ -53,8 +53,8 @@ window.addEventListener("scroll", () => {
   projectNames[2].style.transform = `translateY(calc(966px - ${
     offsetY * 1.2
   }px))`;
-  appShowcaseVideos[2].style.transform = `translate(calc(1468px - ${offsetY}px),calc((690px - ${offsetY}px)))`;
-  appDescriptions[2].style.transform = `translate(calc(1468px - ${offsetY}px),calc((675px - ${offsetY}px)))`;
+  appShowcaseVideos[2].style.transform = `translate(calc(1488px - ${offsetY}px),calc((690px - ${offsetY}px)))`;
+  appDescriptions[2].style.transform = `translate(calc(1488px - ${offsetY}px),calc((675px - ${offsetY}px)))`;
   launchCodeLinksDiv[2].style.transform = `translateY(calc(875px - ${
     offsetY * 1.1
   }px))`;
@@ -62,8 +62,8 @@ window.addEventListener("scroll", () => {
   projectNames[3].style.transform = `translateY(calc(1110px - ${
     offsetY * 1.2
   }px))`;
-  appShowcaseVideos[3].style.transform = `translate(calc(1850px - ${offsetY}px),calc((763px - ${offsetY}px)))`;
-  appDescriptions[3].style.transform = `translate(calc(1850px - ${offsetY}px),calc((763px - ${offsetY}px)))`;
+  appShowcaseVideos[3].style.transform = `translate(calc(1870px - ${offsetY}px),calc((763px - ${offsetY}px)))`;
+  appDescriptions[3].style.transform = `translate(calc(1870px - ${offsetY}px),calc((763px - ${offsetY}px)))`;
   launchCodeLinksDiv[3].style.transform = `translateY(calc(990px - ${
     offsetY * 1.1
   }px))`;
