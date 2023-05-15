@@ -12,6 +12,12 @@ const appDescriptions = document.querySelectorAll(".appDescription");
 const launchCodeLinksDiv = document.querySelectorAll(
   ".launchAndViewCodesLinksRow"
 );
+const otherProjectsArrow = document.querySelector("#other-project-arrow");
+const workflowSection = document.querySelector(".project-workflow-section");
+const gitHubSection = document.querySelector(".githubSection");
+const aboutContactArrows = document.querySelector(".aboutContactArrows");
+const footer = document.querySelectorAll(".footer");
+
 window.addEventListener("scroll", () => {
   let offsetY = window.scrollY;
   //page hero
@@ -59,4 +65,11 @@ window.addEventListener("scroll", () => {
   launchCodeLinksDiv[3].style.transform = `translateY(calc(990px - ${
     offsetY * 1.1
   }px))`;
+  //other project arrow to netlify
+  otherProjectsArrow.style.transform = `translateY(calc(790px - ${offsetY}px))`;
+  //workflow section
+  workflowSection.style.transform = `translateY(calc(1200px - ${offsetY}px))`;
+  gitHubSection.style.transform = `translateY(calc(1400px - ${offsetY}px))`;
+  aboutContactArrows.style.transform = `translateY(calc(1500px - ${offsetY}px))`;
+  footer[0].style.transform = `translateY(calc(1500px - ${offsetY}px))`;
 });
