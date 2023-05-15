@@ -17,7 +17,7 @@
 }
 body {
   font-family: var(--font-family);
-  background: var(--dark-mode-body-background);
+  background: #111;
   font-weight: 200;
   color: white;
 }
