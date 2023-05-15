@@ -19,7 +19,7 @@ body {
   font-family: var(--font-family);
   background: #111;
   font-weight: 200;
-  color: white;
+  color: rgb(187, 187, 187);
 }
 p {
   font-size: var(--paragraphs-font-size);
@@ -88,6 +88,7 @@ img {
 .homepage-hero {
   padding: 80px 0;
   color: white;
+  height: 100vh;
 }
 
 #my-name {
@@ -98,6 +99,7 @@ img {
   font-size: 135px;
   margin-left: 70px;
   margin-right: 70px;
+  color: rgb(210, 210, 210);
 }
 
 #frontend-developer-title {
@@ -108,6 +110,7 @@ img {
   font-weight: 400;
   margin-top: 10px;
   margin-bottom: 18px;
+  color: rgb(187, 187, 187);
 }
 
 .homepageBriefIntroduction {

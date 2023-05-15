@@ -1,4 +1,5 @@
-const nameAndTitle = document.querySelector(".name-and-title-section");
+const myName = document.querySelector("#my-name");
+const myTitle = document.querySelector("#frontend-developer-title");
 const workAndAboutLinks = document.querySelector(
   ".my-work-and-about-links-row"
 );
@@ -21,7 +22,8 @@ const footer = document.querySelectorAll(".footer");
 window.addEventListener("scroll", () => {
   let offsetY = window.scrollY;
   //page hero
-  nameAndTitle.style.transform = `translateX(${-offsetY * 0.3}px)`;
+  myName.style.transform = `translateX(${-offsetY * 0.3}px)`;
+  myTitle.style.transform = `translateX(${offsetY * 0.3}px)`;
   workAndAboutLinks.style.transform = `translateX(${offsetY * 0.3}px)`;
   //service
   serviceTitle.style.transform = `translateY(${-offsetY * 0.3}px)`;
