@@ -43,12 +43,12 @@ window.addEventListener("scroll", () => {
     offsetY * 1.1
   }px))`;
   //2nd project
-  projectNames[1].style.transform = `translateY(calc(840px - ${
+  projectNames[1].style.transform = `translateY(calc(940px - ${
     offsetY * 1.2
   }px))`;
-  appShowcaseVideos[1].style.transform = `translate(calc(1170px - ${offsetY}px),calc((640px - ${offsetY}px)))`;
-  appDescriptions[1].style.transform = `translate(calc(1170px - ${offsetY}px),calc((640px - ${offsetY}px)))`;
-  launchCodeLinksDiv[1].style.transform = `translateY(calc(800px - ${
+  appShowcaseVideos[1].style.transform = `translate(calc(1150px - ${offsetY}px),calc((740px - ${offsetY}px)))`;
+  appDescriptions[1].style.transform = `translate(calc(1150px - ${offsetY}px),calc((740px - ${offsetY}px)))`;
+  launchCodeLinksDiv[1].style.transform = `translateY(calc(900px - ${
     offsetY * 1.1
   }px))`;
   //3rd project
