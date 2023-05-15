@@ -1,3 +1,4 @@
+const homepageHero = document.querySelector(".homepage-hero");
 const myName = document.querySelector("#my-name");
 const myTitle = document.querySelector("#frontend-developer-title");
 const workAndAboutLinks = document.querySelector(
@@ -22,6 +23,7 @@ const footer = document.querySelectorAll(".footer");
 window.addEventListener("scroll", () => {
   let offsetY = window.scrollY;
   //page hero
+  homepageHero.style.backgroundPositionX = `${offsetY * 0.5}px`;
   myName.style.transform = `translateX(${-offsetY * 0.3}px)`;
   myTitle.style.transform = `translateX(${offsetY * 0.3}px)`;
   workAndAboutLinks.style.transform = `translateX(${offsetY * 0.3}px)`;
