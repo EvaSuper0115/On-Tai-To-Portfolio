@@ -52,25 +52,25 @@ window.addEventListener("scroll", () => {
     offsetY * 1.1
   }px))`;
   //3rd project
-  projectNames[2].style.transform = `translateY(calc(966px - ${
+  projectNames[2].style.transform = `translateY(calc(1150px - ${
     offsetY * 1.2
   }px))`;
-  appShowcaseVideos[2].style.transform = `translate(calc(1488px - ${offsetY}px),calc((690px - ${offsetY}px)))`;
-  appDescriptions[2].style.transform = `translate(calc(1488px - ${offsetY}px),calc((675px - ${offsetY}px)))`;
-  launchCodeLinksDiv[2].style.transform = `translateY(calc(875px - ${
+  appShowcaseVideos[2].style.transform = `translate(calc(1460px - ${offsetY}px),calc((900px - ${offsetY}px)))`;
+  appDescriptions[2].style.transform = `translate(calc(1460px - ${offsetY}px),calc((900px - ${offsetY}px)))`;
+  launchCodeLinksDiv[2].style.transform = `translateY(calc(1080px - ${
     offsetY * 1.1
   }px))`;
   //4th project
-  projectNames[3].style.transform = `translateY(calc(1110px - ${
+  projectNames[3].style.transform = `translateY(calc(1360px - ${
     offsetY * 1.2
   }px))`;
-  appShowcaseVideos[3].style.transform = `translate(calc(1870px - ${offsetY}px),calc((763px - ${offsetY}px)))`;
-  appDescriptions[3].style.transform = `translate(calc(1870px - ${offsetY}px),calc((763px - ${offsetY}px)))`;
-  launchCodeLinksDiv[3].style.transform = `translateY(calc(990px - ${
+  appShowcaseVideos[3].style.transform = `translate(calc(1820px - ${offsetY}px),calc((1050px - ${offsetY}px)))`;
+  appDescriptions[3].style.transform = `translate(calc(1820px - ${offsetY}px),calc((1050px - ${offsetY}px)))`;
+  launchCodeLinksDiv[3].style.transform = `translateY(calc(1290px - ${
     offsetY * 1.1
   }px))`;
   //other project arrow to netlify
-  otherProjectsArrow.style.transform = `translateY(calc(790px - ${offsetY}px))`;
+  otherProjectsArrow.style.transform = `translateY(calc(1100px - ${offsetY}px))`;
   //workflow section
   workflowSection.style.transform = `translateY(calc(1200px - ${offsetY}px))`;
   gitHubSection.style.transform = `translateY(calc(1400px - ${offsetY}px))`;
