@@ -50,4 +50,13 @@ window.addEventListener("scroll", () => {
   launchCodeLinksDiv[2].style.transform = `translateY(calc(875px - ${
     offsetY * 1.1
   }px))`;
+  //4th project
+  projectNames[3].style.transform = `translateY(calc(1110px - ${
+    offsetY * 1.2
+  }px))`;
+  appShowcaseVideos[3].style.transform = `translate(calc(1850px - ${offsetY}px),calc((763px - ${offsetY}px)))`;
+  appDescriptions[3].style.transform = `translate(calc(1850px - ${offsetY}px),calc((763px - ${offsetY}px)))`;
+  launchCodeLinksDiv[3].style.transform = `translateY(calc(990px - ${
+    offsetY * 1.1
+  }px))`;
 });
