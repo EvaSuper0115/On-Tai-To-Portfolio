@@ -10,7 +10,7 @@ const serviceGrid = document.querySelector(".service-grid");
 const resumeLink = document.querySelector("#resume");
 const myWorkTitle = document.querySelector("#my-work-title");
 const projects = document.querySelectorAll(".project");
-
+const workflowPics = document.querySelectorAll(".workflow-pic");
 window.addEventListener("scroll", () => {
   let offsetY = window.scrollY;
   //page hero
@@ -38,5 +38,43 @@ window.addEventListener("scroll", () => {
   projects[3].style.transform = `translateX(calc(1250px + ${
     -offsetY * 0.4
   }px))`;
-  ntactArrows.style.transform = `translateY(calc(2200px - ${offsetY}px))`;
+  //workflow chart bubbles
+
+  workflowPics[0].style.transform = `translateX(calc(1600px + ${
+    -offsetY * 0.4
+  }px))`;
+  //2nd bubble animation delay
+  workflowPics[1].style.transform = `translateX(calc(1600px + ${
+    -offsetY * 0.4
+  }px))`;
+  workflowPics[1].style.transitionDelay = "0.02s";
+  //3rd bubble animation delay
+  workflowPics[2].style.transform = `translateX(calc(1600px + ${
+    -offsetY * 0.4
+  }px))`;
+  workflowPics[2].style.transitionDelay = "0.05s";
+  //4th bubble animation delay
+  workflowPics[3].style.transform = `translateX(calc(1600px + ${
+    -offsetY * 0.4
+  }px))`;
+  workflowPics[3].style.transitionDelay = "0.07s";
+  //5th bubble
+  workflowPics[4].style.transform = `translateX(calc(-1630px - ${
+    -offsetY * 0.4
+  }px))`;
+  //6th bubble animation delay = 2nd bubble
+  workflowPics[5].style.transform = `translateX(calc(-1630px - ${
+    -offsetY * 0.4
+  }px))`;
+  workflowPics[5].style.transitionDelay = "0.02s";
+  //7th bubble animation delay = 3rd bubble
+  workflowPics[6].style.transform = `translateX(calc(-1630px - ${
+    -offsetY * 0.4
+  }px))`;
+  workflowPics[6].style.transitionDelay = "0.05s";
+  //8th bubble animation delay = 4th bubble
+  workflowPics[7].style.transform = `translateX(calc(-1630px - ${
+    -offsetY * 0.4
+  }px))`;
+  workflowPics[7].style.transitionDelay = "0.07s";
 });
