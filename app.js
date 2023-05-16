@@ -1,3 +1,4 @@
+//on homepage
 const homepageHero = document.querySelector(".homepage-hero");
 const myName = document.querySelector("#my-name");
 const myTitle = document.querySelector("#frontend-developer-title");
