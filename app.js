@@ -44,7 +44,7 @@ window.addEventListener("scroll", () => {
     -offsetY * 0.4
   }px))`;
   //2nd project
-  projects[1].style.transform = `translateX(calc(720px + ${-offsetY * 0.4}px))`;
+  projects[1].style.transform = `translateX(calc(730px + ${-offsetY * 0.4}px))`;
   //3rd project
   projects[2].style.transform = `translateX(calc(-990px - ${
     -offsetY * 0.4
