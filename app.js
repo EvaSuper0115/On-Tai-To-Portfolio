@@ -23,7 +23,7 @@ window.addEventListener("scroll", () => {
   serviceGrid.style.transform = `translateY(${-offsetY * 0.2}px)`;
   resumeLink.style.transform = `translateY(calc(490px - ${offsetY}px))`;
   //see my work
-  myWorkTitle.style.transform = `translateY(calc(700px - ${offsetY * 1.3}px))`;
+  myWorkTitle.style.transform = `translateY(calc(820px - ${offsetY * 1.3}px))`;
   //1st project
   projects[0].style.transform = `translateX(calc(-500px - ${
     -offsetY * 0.4
