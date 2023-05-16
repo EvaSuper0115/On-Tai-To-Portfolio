@@ -72,8 +72,7 @@ window.addEventListener("scroll", () => {
   //other project arrow to netlify
   otherProjectsArrow.style.transform = `translateY(calc(1100px - ${offsetY}px))`;
   //workflow section
-  workflowSection.style.transform = `translateY(calc(1200px - ${offsetY}px))`;
-  gitHubSection.style.transform = `translateY(calc(1400px - ${offsetY}px))`;
-  aboutContactArrows.style.transform = `translateY(calc(1500px - ${offsetY}px))`;
-  footer[0].style.transform = `translateY(calc(1500px - ${offsetY}px))`;
+  //workflowSection.style.transform = `translateY(calc(1500px - ${offsetY}px))`;
+  //gitHubSection.style.transform = `translateY(calc(2000px - ${offsetY}px))`;
+  //aboutContactArrows.style.transform = `translateY(calc(2200px - ${offsetY}px))`;
 });
