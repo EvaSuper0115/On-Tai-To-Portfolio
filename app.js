@@ -6,7 +6,7 @@ const workAndAboutLinks = document.querySelector(
   ".my-work-and-about-links-row"
 );
 const serviceTitle = document.querySelector("#service");
-const serviceGrid = document.querySelector(".service-grid");
+const servicePics = document.querySelectorAll(".service-pics");
 const resumeLink = document.querySelector("#resume");
 const myWorkTitle = document.querySelector("#my-work-title");
 const projects = document.querySelectorAll(".project");
@@ -19,9 +19,24 @@ window.addEventListener("scroll", () => {
   myTitle.style.transform = `translateX(${offsetY * 0.3}px)`;
   workAndAboutLinks.style.transform = `translateX(${offsetY * 0.3}px)`;
   //service
-  serviceTitle.style.transform = `translateY(${-offsetY * 0.3}px)`;
-  serviceGrid.style.transform = `translateY(${-offsetY * 0.2}px)`;
-  resumeLink.style.transform = `translateY(calc(490px - ${offsetY}px))`;
+  serviceTitle.style.transform = `translateY(calc(200px - ${offsetY * 0.8}px))`;
+  //serviceGrid bubble effct
+  servicePics[0].style.transform = `translateY(calc(205px - ${
+    offsetY * 0.6
+  }px))`;
+  servicePics[1].style.transform = `translateY(calc(205px - ${
+    offsetY * 0.6
+  }px))`;
+  servicePics[1].style.transitionDelay = "0.03s";
+  servicePics[2].style.transform = `translateY(calc(205px - ${
+    offsetY * 0.6
+  }px))`;
+  servicePics[2].style.transitionDelay = "0.06s";
+  servicePics[3].style.transform = `translateY(calc(205px - ${
+    offsetY * 0.6
+  }px))`;
+  servicePics[3].style.transitionDelay = "0.09s";
+  resumeLink.style.transform = `translateY(calc(490px - ${offsetY * 0.9}px))`;
   //see my work
   myWorkTitle.style.transform = `translateY(calc(820px - ${offsetY * 1.3}px))`;
   //1st project
