@@ -86,8 +86,7 @@ img {
 /* homepage styles */
 
 .homepage-hero {
-  background: url(./geoBackground.png),
-    linear-gradient(181deg, #111, rgb(96, 41, 114) 49%, #111 100%);
+  background: linear-gradient(181deg, #111, rgb(118, 65, 136) 49%, #111 100%);
   background-size: contain;
   padding: 0;
   display: flex;
