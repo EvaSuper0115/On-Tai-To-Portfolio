@@ -19,7 +19,7 @@ window.addEventListener("scroll", () => {
   myTitle.style.transform = `translateX(${offsetY * 0.3}px)`;
   workAndAboutLinks.style.transform = `translateX(${offsetY * 0.3}px)`;
   //service
-  serviceTitle.style.transform = `translateY(calc(200px - ${offsetY * 0.8}px))`;
+  serviceTitle.style.transform = `translateY(calc(200px - ${offsetY * 0.7}px))`;
   //serviceGrid bubble effct
   servicePics[0].style.transform = `translateY(calc(205px - ${
     offsetY * 0.6
@@ -36,9 +36,9 @@ window.addEventListener("scroll", () => {
     offsetY * 0.6
   }px))`;
   servicePics[3].style.transitionDelay = "0.09s";
-  resumeLink.style.transform = `translateY(calc(490px - ${offsetY * 0.9}px))`;
+  resumeLink.style.transform = `translateY(calc(520px - ${offsetY * 0.8}px))`;
   //see my work
-  myWorkTitle.style.transform = `translateY(calc(820px - ${offsetY * 1.3}px))`;
+  myWorkTitle.style.transform = `translateY(calc(890px - ${offsetY * 1.3}px))`;
   //1st project
   projects[0].style.transform = `translateX(calc(-500px - ${
     -offsetY * 0.4
