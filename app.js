@@ -14,31 +14,31 @@ const workflowPics = document.querySelectorAll(".workflow-pic");
 window.addEventListener("scroll", () => {
   let offsetY = window.scrollY;
   //page hero
-  //homepageHero.style.backgroundPositionX = `${offsetY * 0.5}px`;
+  homepageHero.style.backgroundPositionY = `${offsetY * 0.5}px`;
   myName.style.transform = `translateX(${-offsetY * 0.3}px)`;
   myTitle.style.transform = `translateX(${offsetY * 0.3}px)`;
   workAndAboutLinks.style.transform = `translateX(${offsetY * 0.3}px)`;
   //service
-  serviceTitle.style.transform = `translateY(calc(200px - ${offsetY * 0.7}px))`;
+  //serviceTitle.style.transform = `translateY(calc(200px - ${offsetY * 0.7}px))`;
   //serviceGrid bubble effct
-  servicePics[0].style.transform = `translateY(calc(205px - ${
+  servicePics[0].style.transform = `translateY(calc(350px - ${
     offsetY * 0.6
   }px))`;
-  servicePics[1].style.transform = `translateY(calc(205px - ${
+  servicePics[1].style.transform = `translateY(calc(350px - ${
     offsetY * 0.6
   }px))`;
   servicePics[1].style.transitionDelay = "0.03s";
-  servicePics[2].style.transform = `translateY(calc(205px - ${
+  servicePics[2].style.transform = `translateY(calc(350px - ${
     offsetY * 0.6
   }px))`;
   servicePics[2].style.transitionDelay = "0.06s";
-  servicePics[3].style.transform = `translateY(calc(205px - ${
+  servicePics[3].style.transform = `translateY(calc(350px - ${
     offsetY * 0.6
   }px))`;
   servicePics[3].style.transitionDelay = "0.09s";
-  resumeLink.style.transform = `translateY(calc(520px - ${offsetY * 0.8}px))`;
+  resumeLink.style.transform = `translateY(calc(550px - ${offsetY * 0.8}px))`;
   //see my work
-  myWorkTitle.style.transform = `translateY(calc(890px - ${offsetY * 1.3}px))`;
+  myWorkTitle.style.transform = `translateY(calc(950px - ${offsetY * 1.2}px))`;
   //1st project
   projects[0].style.transform = `translateX(calc(-500px - ${
     -offsetY * 0.4

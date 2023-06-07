@@ -86,8 +86,8 @@ img {
 /* homepage styles */
 
 .homepage-hero {
-  background: linear-gradient(181deg, #111, rgb(118, 65, 136) 49%, #111 100%);
-  background-size: contain;
+  background: url(girlCanvaBG.png);
+  background-size: cover;
   padding: 0;
   display: flex;
   height: 100vh;
