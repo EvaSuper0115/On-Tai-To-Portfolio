@@ -96,7 +96,7 @@ img {
 
 #my-name {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   font-weight: 700;
   font-family: "Dancing Script", cursive;
   font-size: 19vw;
@@ -107,10 +107,10 @@ img {
 
 #frontend-developer-title {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-left: 70px;
   margin-right: 70px;
-  font-weight: 400;
+  font-weight: 700;
   margin-top: 10px;
   margin-bottom: 18px;
   color: rgb(187, 187, 187);
@@ -518,8 +518,8 @@ small {
   justify-content: center;
 }
 .navbarDecoration {
-  background: black;
-  opacity: 0.95;
+  background: #111;
+  opacity: 0.9;
   border-radius: 0 0 2px 2px;
   box-shadow: var(--box-shadow);
   padding: 0;
@@ -587,6 +587,10 @@ small a {
 @media (max-width: 1024px) {
   * {
     transform: none !important;
+  }
+  #my-name,
+  #frontend-developer-title {
+    justify-content: center;
   }
 }
 @media (max-width: 375px) {
