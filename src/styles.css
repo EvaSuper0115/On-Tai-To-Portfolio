@@ -519,11 +519,13 @@ small {
 }
 .navbarDecoration {
   background: #111;
-  opacity: 0.9;
   border-radius: 0 0 2px 2px;
   box-shadow: var(--box-shadow);
   padding: 0;
   min-height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 /*
 .navbarButtonDecoration {
@@ -539,7 +541,7 @@ small {
 
 .navbarTexts {
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 200;
   transition: var(--transition-for-hovers);
   padding: 9px 1px;
   color: white;
