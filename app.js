@@ -21,18 +21,18 @@ window.addEventListener("scroll", () => {
   //service
   //serviceTitle.style.transform = `translateY(calc(200px - ${offsetY * 0.7}px))`;
   //serviceGrid bubble effct
-  servicePics[0].style.transform = `translateY(calc(350px - ${
+  servicePics[0].style.transform = `translateY(calc(360px - ${
     offsetY * 0.6
   }px))`;
-  servicePics[1].style.transform = `translateY(calc(350px - ${
+  servicePics[1].style.transform = `translateY(calc(360px - ${
     offsetY * 0.6
   }px))`;
   servicePics[1].style.transitionDelay = "0.03s";
-  servicePics[2].style.transform = `translateY(calc(350px - ${
+  servicePics[2].style.transform = `translateY(calc(360px - ${
     offsetY * 0.6
   }px))`;
   servicePics[2].style.transitionDelay = "0.06s";
-  servicePics[3].style.transform = `translateY(calc(350px - ${
+  servicePics[3].style.transform = `translateY(calc(360px - ${
     offsetY * 0.6
   }px))`;
   servicePics[3].style.transitionDelay = "0.09s";
