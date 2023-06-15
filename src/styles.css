@@ -35,8 +35,19 @@ a {
 
 img {
   border-radius: 1px;
+  object-position: center;
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+.blur-load {
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
 .row {
   justify-content: center;
 }
@@ -146,13 +157,7 @@ img {
 .app-features {
   padding: 10px 0;
 }
-#profile-photo {
-  display: flex;
-  justify-content: flex-start;
-  margin: 50px auto;
-  border-radius: 20px;
-  box-shadow: var(--box-shadow);
-}
+
 .my-work-and-about-links-row {
   display: flex;
   justify-content: center;
@@ -199,6 +204,7 @@ img {
   display: block;
   margin: 0 auto;
   width: 100%;
+  height: auto;
   border-radius: 50%;
   transition: var(--transition-for-hovers);
 }
@@ -374,11 +380,6 @@ img {
   position: relative;
   top: -34px;
   left: -35px;
-}
-#profile-picture {
-  margin-top: auto;
-  margin-bottom: auto;
-  border-radius: 3px;
 }
 
 .myStrength {
