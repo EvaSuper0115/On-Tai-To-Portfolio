@@ -21,24 +21,7 @@ window.addEventListener("scroll", () => {
   //service
   //serviceTitle.style.transform = `translateY(calc(200px - ${offsetY * 0.7}px))`;
   //serviceGrid bubble effct
-  servicePics[0].style.transform = `translateY(calc(360px - ${
-    offsetY * 0.6
-  }px))`;
-  servicePics[1].style.transform = `translateY(calc(360px - ${
-    offsetY * 0.6
-  }px))`;
-  servicePics[1].style.transitionDelay = "0.03s";
-  servicePics[2].style.transform = `translateY(calc(360px - ${
-    offsetY * 0.6
-  }px))`;
-  servicePics[2].style.transitionDelay = "0.06s";
-  servicePics[3].style.transform = `translateY(calc(360px - ${
-    offsetY * 0.6
-  }px))`;
-  servicePics[3].style.transitionDelay = "0.09s";
-  resumeLink.style.transform = `translateY(calc(550px - ${offsetY * 0.8}px))`;
-  //see my work
-  myWorkTitle.style.transform = `translateY(calc(950px - ${offsetY * 1.2}px))`;
+
   //1st project
   projects[0].style.transform = `translateX(calc(-500px - ${
     -offsetY * 0.4
