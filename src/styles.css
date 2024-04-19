@@ -97,7 +97,7 @@ img {
 /* homepage styles */
 
 .homepage-hero {
-  background: url(girlCanvaBG.png);
+  background: url(page-hero-BG.png);
   background-size: cover;
   padding: 0;
   display: flex;
