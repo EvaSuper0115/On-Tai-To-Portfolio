@@ -15,6 +15,7 @@
     black 100%
   );
 }
+
 body {
   font-family: var(--font-family);
   background: #111;
@@ -97,7 +98,7 @@ img {
 /* homepage styles */
 
 .homepage-hero {
-  background: url(page-hero-BG.png);
+  background: url(BG2.png);
   background-size: cover;
   padding: 0;
   display: flex;
@@ -108,12 +109,17 @@ img {
 #my-name {
   display: flex;
   justify-content: flex-start;
-  font-weight: 700;
-  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+  font-family: "Jersey 25", sans-serif;
   font-size: 19vw;
   margin-left: 70px;
   margin-right: 70px;
   color: rgb(210, 210, 210);
+  transform-style: preserve-3d;
+  z-index: 2;
+  text-shadow: 1px 1px 1px #676666, 1px 2px 1px #676666, 1px 3px 1px #676666,
+    1px 4px 1px #676666, 1px 5px 1px #676666, 1px 6px 1px #676666,
+    1px 7px 1px #676666, 1px 8px 1px #676666, 1px 18px 6px rgba(16, 16, 16, 0.4);
 }
 
 #frontend-developer-title {
@@ -225,7 +231,7 @@ img {
 .projectName {
   font-size: 34px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+  font-family: "Jersey 25", sans-serif;
 }
 
 .launchAndViewCodesLinksRow {
@@ -246,6 +252,7 @@ img {
   position: relative;
   overflow: hidden;
   color: rgb(205, 204, 204);
+  font-family: "Jersey 25", sans-serif;
 }
 .launchProjectLinks::after {
   content: "Launch app";
@@ -552,7 +559,7 @@ small {
 
 .navbarName {
   font-size: 5vh;
-  font-family: "Dancing Script", cursive;
+  font-family: "Jersey 25", sans-serif;
   font-weight: 500;
   color: white;
 }
